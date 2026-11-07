@@ -1,0 +1,70 @@
+{
+ "f": [
+  [
+   "Brown or dark spots on leaves",
+   "Possible fungal disease",
+   "Use certified seed, avoid extra nitrogen, drain standing water, remove infected leaves"
+  ],
+  [
+   "Yellowing of lower leaves",
+   "Nutrient or water stress, or disease",
+   "Check soil moisture, do a soil test, avoid over-watering"
+  ],
+  [
+   "Chewed leaves, dead shoots",
+   "Possible stem borer or armyworm",
+   "Scout weekly, remove affected plants, use pheromone traps"
+  ]
+ ],
+ "v": [
+  [
+   "Wilting plants with green leaves",
+   "Possible bacterial wilt or root rot",
+   "Rotate crops, use raised beds, avoid waterlogging, remove wilted plants"
+  ],
+  [
+   "Curled leaves, stunted growth",
+   "Possible virus spread by whitefly or thrips",
+   "Use healthy seedlings, yellow sticky traps, remove affected plants early"
+  ],
+  [
+   "Holes in fruit or pods",
+   "Possible fruit borer",
+   "Collect and destroy affected fruit, use traps, harvest on time"
+  ]
+ ],
+ "t": [
+  [
+   "Gum oozing, bark cracks",
+   "Possible stem or trunk disease",
+   "Keep the trunk clean, prune and burn infected wood, avoid injuries"
+  ],
+  [
+   "Leaf spots, fruit rot",
+   "Possible fungal disease in wet weather",
+   "Prune for airflow, clean up fallen fruit, improve drainage"
+  ],
+  [
+   "Sticky leaves, sooty black coating",
+   "Possible sap-sucking insects such as aphids or mealybugs",
+   "Check regularly, wash plants, encourage natural enemies"
+  ]
+ ],
+ "p": [
+  [
+   "Yellowing and dropping of nuts or berries",
+   "Possible fungal rot in heavy rain",
+   "Open drains, keep gardens clean, seek advice before any spraying"
+  ],
+  [
+   "Yellowing fronds or leaves, slow growth",
+   "Nutrient shortage or root problem",
+   "Give balanced manure, do a soil test, keep roots free of waterlogging"
+  ],
+  [
+   "Holes or tunnels in stems or leaves",
+   "Possible borer or beetle damage",
+   "Remove and destroy affected parts, inspect weekly"
+  ]
+ ]
+}

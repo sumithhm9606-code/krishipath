@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KRISHIPATH — Karnataka Agricultural Decision Support System</title>
+<link rel="icon" type="image/png" href="maize-logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Figtree:wght@400;500;600;700&family=Noto+Sans+Kannada:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- GOV TOPBAR -->
+<div class="gov-topbar">
+  <div class="gov-topbar-inner">
+    <div class="gov-identity">
+      <span class="gov-emblem">🏛️</span>
+      <span data-k="gov_identity">Government of Karnataka · Department of Agriculture | ಕರ್ನಾಟಕ ಸರ್ಕಾರ · ಕೃಷಿ ಇಲಾಖೆ</span>
+    </div>
+    <div class="gov-portal-tag" data-k="gov_portal_tag">Official Agri-Advisory Portal</div>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header id="main-header">
+  <div class="brand-wrapper">
+    <div class="brand-logo" aria-hidden="true" title="KRISHIPATH Golden Blinking Maize Logo">
+      <img src="maize-logo.png" alt="Opening Maize Logo" width="38" height="38">
+    </div>
+    <a class="brand" href="#" onclick="goPage('p1');return false;">
+      <span data-k="brand_title">KRISHIPATH · ಕೃಷಿಪಥ</span>
+      <span class="brand-sub" data-k="brand_sub">State Agricultural Decision Support System</span>
+    </a>
+    <span id="user-greeting" class="user-greeting" style="display:none"></span>
+  </div>
+  <nav id="main-nav" style="display:none;">
+    <a href="#" onclick="goPage('p2');return false;" id="nav-p2" data-k="nav_crop">Crop Select</a>
+    <a href="#" onclick="goPage('p3');return false;" id="nav-p3" data-k="nav_land">Land Details</a>
+    <a href="#" onclick="goPage('p4');return false;" id="nav-p4" data-k="nav_plan">My Plan</a>
+    <a href="#" onclick="goPage('p5');return false;" id="nav-p5" data-k="nav_comm">Farmer Community</a>
+  </nav>
+  <div class="header-actions">
+    <div class="lang-toggle" role="group" aria-label="Language Selector">
+      <button id="le" class="on" onclick="setLanguage('en')">EN</button>
+      <button id="lk" onclick="setLanguage('kn')">ಕನ್ನಡ</button>
+      <button id="lh" onclick="setLanguage('hi')">हिंदी</button>
+    </div>
+    <button id="logout-btn" class="btn-logout" style="display:none" onclick="doLogout()" data-k="btn_logout">Logout</button>
+  </div>
+</header>
+
+<!-- ================================================================
+     PAGE 1: LOGIN
+     ================================================================ -->
+<div id="p1" class="page active">
+  <section class="login-section">
+    <div class="login-hero">
+      <div class="login-card">
+        <div class="login-logo">
+          <div class="login-emblem" title="KRISHIPATH — Golden Blinking Maize Logo">
+            <img src="maize-logo.png" alt="Opening Maize Logo" width="80" height="80">
+          </div>
+          <h1 class="login-title" data-k="login_title">KRISHIPATH</h1>
+          <p class="login-sub" data-k="login_sub">ಕೃಷಿಪಥ — Karnataka Agricultural Decision Support System</p>
+        </div>
+
+        <div class="login-form-wrap">
+          <p class="login-welcome" data-k="login_welcome">Welcome, Farmer! Enter your User ID (Gmail), password, and select your district to begin your personalised farming plan.</p>
+          <div class="login-field">
+            <label for="login-email" data-k="login_email_lbl">User ID (Gmail) / ಬಳಕೆದಾರರ ಐಡಿ (Gmail)</label>
+            <input type="email" id="login-email" class="login-input" placeholder="e.g. farmer@gmail.com / ಉದಾ: farmer@gmail.com" maxlength="80" autocomplete="email" data-k-placeholder="login_email_ph" required>
+          </div>
+          <div class="login-field">
+            <label for="login-password" data-k="login_pwd_lbl">Password / ಪಾಸ್‌ವರ್ಡ್</label>
+            <div style="position:relative; display:flex; align-items:center;">
+              <input type="password" id="login-password" class="login-input" placeholder="Enter your password / ನಿಮ್ಮ ಪಾಸ್‌ವರ್ಡ್" maxlength="40" autocomplete="current-password" data-k-placeholder="login_pwd_ph" style="padding-right:42px;" required>
+              <button type="button" id="toggle-pwd-btn" onclick="togglePasswordVisibility()" style="position:absolute; right:10px; background:none; border:none; cursor:pointer; font-size:1.15rem; color:var(--text-muted); padding:4px;" title="Show/Hide Password">👁️</button>
+            </div>
+          </div>
+          <div class="login-field">
+            <label for="login-district" data-k="login_dist_lbl">Your District / ನಿಮ್ಮ ಜಿಲ್ಲೆ</label>
+            <select id="login-district" class="login-input" required>
+              <option value="" data-k="sel_district_opt">-- Select District / ಜಿಲ್ಲೆಯನ್ನು ಆಯ್ಕೆಮಾಡಿ --</option>
+              <option value="Bagalkote">Bagalkote (ಬಾಗಲಕೋಟೆ)</option>
+              <option value="Ballari">Ballari (ಬಳ್ಳಾರಿ)</option>
+              <option value="Belagavi">Belagavi (ಬೆಳಗಾವಿ)</option>
+              <option value="Bengaluru Rural">Bengaluru Rural (ಬೆಂಗಳೂರು ಗ್ರಾಮಾಂತರ)</option>
+              <option value="Bengaluru Urban">Bengaluru Urban (ಬೆಂಗಳೂರು ನಗರ)</option>
+              <option value="Bidar">Bidar (ಬೀದರ್)</option>
+              <option value="Chamarajanagar">Chamarajanagar (ಚಾಮರಾಜನಗರ)</option>
+              <option value="Chikkaballapur">Chikkaballapur (ಚಿಕ್ಕಬಳ್ಳಾಪುರ)</option>
+              <option value="Chikkamagaluru">Chikkamagaluru (ಚಿಕ್ಕಮಗಳೂರು)</option>
+              <option value="Chitradurga">Chitradurga (ಚಿತ್ರದುರ್ಗ)</option>
+              <option value="Dakshina Kannada">Dakshina Kannada (ದಕ್ಷಿಣ ಕನ್ನಡ)</option>
+              <option value="Davanagere">Davanagere (ದಾವಣಗೆರೆ)</option>
+              <option value="Dharwad">Dharwad (ಧಾರವಾಡ)</option>
+              <option value="Gadag">Gadag (ಗದಗ)</option>
+              <option value="Hassan">Hassan (ಹಾಸನ)</option>
+              <option value="Haveri">Haveri (ಹಾವೇರಿ)</option>
+              <option value="Kalaburagi">Kalaburagi (ಕಲಬುರಗಿ)</option>
+              <option value="Kodagu">Kodagu (ಕೊಡಗು)</option>
+              <option value="Kolar">Kolar (ಕೋಲಾರ)</option>
+              <option value="Koppal">Koppal (ಕೊಪ್ಪಳ)</option>
+              <option value="Mandya">Mandya (ಮಂಡ್ಯ)</option>
+              <option value="Mysuru">Mysuru (ಮೈಸೂರು)</option>
+              <option value="Raichur">Raichur (ರಾಯಚೂರು)</option>
+              <option value="Ramanagara">Ramanagara (ರಾಮನಗರ)</option>
+              <option value="Shivamogga">Shivamogga (ಶಿವಮೊಗ್ಗ)</option>
+              <option value="Tumakuru">Tumakuru (ತುಮಕೂರು)</option>
+              <option value="Udupi">Udupi (ಉಡುಪಿ)</option>
+              <option value="Uttara Kannada">Uttara Kannada (ಉತ್ತರ ಕನ್ನಡ)</option>
+              <option value="Vijayapura">Vijayapura (ವಿಜಯಪುರ)</option>
+              <option value="Vijayanagara">Vijayanagara (ವಿಜಯನಗರ)</option>
+              <option value="Yadgir">Yadgir (ಯಾದಗಿರಿ)</option>
+            </select>
+          </div>
+          <button class="btn gold login-btn" id="login-submit" onclick="doLogin()">
+            <span data-k="login_btn">🌱 Start My Farming Plan</span>
+          </button>
+          <p id="login-err" class="login-err" style="display:none"></p>
+        </div>
+
+        <div class="login-features">
+          <div class="login-feat">📊 <span data-k="login_feat_fert">Crop-Specific Fertilizer Plans</span></div>
+          <div class="login-feat">🗺️ <span data-k="login_feat_road">Visual Step-by-Step Roadmap</span></div>
+          <div class="login-feat">📈 <span data-k="login_feat_mkt">Market Price Intelligence</span></div>
+          <div class="login-feat">🔬 <span data-k="login_feat_dis">Crop Disease & Treatment Guide</span></div>
+        </div>
+
+        <!-- Key Indicators -->
+        <div class="login-stats-strip">
+          <div class="ls-stat"><span class="ls-val">57</span><span class="ls-label" data-k="stat_crops">Crops Covered</span></div>
+          <div class="ls-stat"><span class="ls-val">31</span><span class="ls-label" data-k="stat_dist">Districts</span></div>
+          <div class="ls-stat"><span class="ls-val">10</span><span class="ls-label" data-k="stat_soil">Soil Types</span></div>
+          <div class="ls-stat"><span class="ls-val">APMC</span><span class="ls-label" data-k="stat_price">Price Data</span></div>
+        </div>
+      </div>
+
+      <div class="login-illustration">
+        <div class="illus-wrap">
+          <div class="illus-badge illus-b1" data-k="illus_b1">🌾 Cereals & Millets</div>
+          <div class="illus-badge illus-b2" data-k="illus_b2">🫘 Pulses</div>
+          <div class="illus-badge illus-b3" data-k="illus_b3">🥜 Oilseeds</div>
+          <div class="illus-badge illus-b4" data-k="illus_b4">🍅 Vegetables</div>
+          <div class="illus-badge illus-b5" data-k="illus_b5">🍌 Fruits</div>
+          <div class="illus-badge illus-b6" data-k="illus_b6">☕ Plantation</div>
+          <div class="illus-hero-icon"><img src="maize-logo.png" alt="Opening Maize Logo" style="width:84px; height:84px; filter:drop-shadow(0 0 16px rgba(255,215,0,0.85));"></div>
+          <div class="illus-circle-outer"></div>
+          <div class="illus-circle-inner"></div>
+        </div>
+        <div class="illus-caption" data-k="illus_cap">Karnataka's Complete Agricultural Guide<br><span>57 crops · Season-wise · District-wise</span></div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ================================================================
+     PAGE 2: CROP SELECTION
+     ================================================================ -->
+<div id="p2" class="page">
+  <section class="page-section">
+    <div class="page-header-bar">
+      <div class="phb-left">
+        <div class="step-badge" data-k="p2_step_badge">Step 1 of 3</div>
+        <h2 class="page-title" data-k="p2_title">Select Your Crop</h2>
+        <p class="page-subtitle" data-k="p2_sub">Choose from 57 Karnataka-approved agro-climatic crops</p>
+      </div>
+    </div>
+
+    <!-- Search & Filter Bar -->
+    <div class="crop-filter-bar">
+      <div class="crop-search-wrap">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="crop-search" class="crop-search-input" placeholder="Search crop by English or Kannada name..." data-k-placeholder="p2_search_ph">
+      </div>
+      <div class="cat-filter-tabs" id="cat-tabs">
+        <button class="cat-tab active" data-cat="ALL" data-k="cat_all">All (57)</button>
+        <button class="cat-tab" data-cat="C" data-k="cat_c">🌾 Cereals</button>
+        <button class="cat-tab" data-cat="P" data-k="cat_p">🫘 Pulses</button>
+        <button class="cat-tab" data-cat="O" data-k="cat_o">🥜 Oilseeds</button>
+        <button class="cat-tab" data-cat="N" data-k="cat_n">🏭 Commercial</button>
+        <button class="cat-tab" data-cat="V" data-k="cat_v">🥦 Vegetables</button>
+        <button class="cat-tab" data-cat="F" data-k="cat_f">🍎 Fruits</button>
+        <button class="cat-tab" data-cat="T" data-k="cat_t">☕ Plantation</button>
+      </div>
+    </div>
+
+    <!-- Crop Grid -->
+    <div class="crop-grid-p2" id="crop-grid-p2"></div>
+
+    <!-- No results -->
+    <div id="no-crop-results" style="display:none;text-align:center;padding:40px;color:var(--text-muted)">
+      <span style="font-size:2rem">🔍</span><p data-k="p2_no_results">No crops found. Try a different search.</p>
+    </div>
+
+    <!-- Bottom Action -->
+    <div class="page-bottom-bar">
+      <div id="p2-selected-info" class="selected-crop-info" style="display:none">
+        <span id="p2-sel-icon" class="sel-crop-icon"></span>
+        <span id="p2-sel-name" class="sel-crop-name"></span>
+        <span class="sel-crop-tag" id="p2-sel-tag"></span>
+      </div>
+      <button class="btn gold" id="p2-next" onclick="goPage('p3')" disabled>
+        <span data-k="p2_next_btn">Next: Add Land Details →</span>
+      </button>
+    </div>
+  </section>
+</div>
+
+<!-- ================================================================
+     PAGE 3: LAND DETAILS
+     ================================================================ -->
+<div id="p3" class="page">
+  <section class="page-section">
+    <div class="page-header-bar">
+      <button class="btn-back" onclick="goPage('p2')">
+        <span data-k="p3_btn_back">← Back to Crops</span>
+      </button>
+      <div class="phb-left">
+        <div class="step-badge" data-k="p3_step_badge">Step 2 of 3</div>
+        <h2 class="page-title" data-k="p3_title">Land Details</h2>
+        <p class="page-subtitle" data-k="p3_sub">Provide your farm specifications to calculate precise resources and financials</p>
+      </div>
+    </div>
+
+    <!-- Selected Crop Summary -->
+    <div class="selected-crop-banner" id="p3-crop-banner">
+      <div class="scb-crop-info">
+        <span class="scb-icon" id="p3-crop-icon">🌾</span>
+        <div>
+          <div class="scb-crop-name" id="p3-crop-name">No crop selected</div>
+          <div class="scb-crop-meta" id="p3-crop-meta">--</div>
+        </div>
+      </div>
+      <button class="btn-sm secondary" onclick="goPage('p2')">
+        <span data-k="p3_change_crop">Change Crop</span>
+      </button>
+    </div>
+
+    <div class="land-form-grid">
+      <!-- District -->
+      <div class="land-form-group">
+        <label class="lf-label" for="lf-district">
+          <span class="lf-icon">📍</span>
+          <span data-k="p3_dist_lbl">District / ಜಿಲ್ಲೆ *</span>
+        </label>
+        <select id="lf-district" class="lf-input">
+          <option value="" data-k="sel_district_opt">-- Select Karnataka District --</option>
+        </select>
+      </div>
+
+      <!-- Soil Type -->
+      <div class="land-form-group">
+        <label class="lf-label" for="lf-soil">
+          <span class="lf-icon">🪨</span>
+          <span data-k="p3_soil_lbl">Soil Type / ಮಣ್ಣಿನ ಪ್ರಕಾರ *</span>
+        </label>
+        <select id="lf-soil" class="lf-input" onchange="showSoilInfo(this.value)">
+          <option value="" data-k="sel_soil_opt">-- Select Soil Type --</option>
+        </select>
+        <div class="soil-info-box" id="soil-info-box" style="display:none">
+          <div class="sib-name" id="sib-name"></div>
+          <div class="sib-desc" id="sib-desc"></div>
+          <div class="sib-suitable"><span data-k="sib_best_for">✅ Best for:</span> <span id="sib-suitable"></span></div>
+        </div>
+      </div>
+
+      <!-- Land Area -->
+      <div class="land-form-group">
+        <label class="lf-label" for="lf-acres">
+          <span class="lf-icon">📐</span>
+          <span data-k="p3_area_lbl">Land Area / ಜಮೀನಿನ ವಿಸ್ತೀರ್ಣ *</span>
+        </label>
+        <div class="lf-input-row">
+          <input type="number" id="lf-acres" class="lf-input" min="0.1" max="1000" step="0.1" placeholder="e.g. 2.5" oninput="updateAcreInfo()">
+          <span class="lf-unit" data-k="unit_acres">acres</span>
+        </div>
+        <div class="acre-presets-row">
+          <button class="preset-pill" data-ac="0.5" onclick="setAcre(0.5)">½ Ac</button>
+          <button class="preset-pill" data-ac="1" onclick="setAcre(1)">1 Ac</button>
+          <button class="preset-pill" data-ac="2" onclick="setAcre(2)">2 Ac</button>
+          <button class="preset-pill" data-ac="3" onclick="setAcre(3)">3 Ac</button>
+          <button class="preset-pill" data-ac="5" onclick="setAcre(5)">5 Ac</button>
+          <button class="preset-pill" data-ac="10" onclick="setAcre(10)">10 Ac</button>
+        </div>
+        <div class="acre-calc" id="acre-calc">— Guntas</div>
+      </div>
+
+      <!-- Sowing Date -->
+      <div class="land-form-group">
+        <label class="lf-label" for="lf-sow">
+          <span class="lf-icon">📅</span>
+          <span data-k="p3_sow_lbl">Sowing / Planting Date / ಬಿತ್ತನೆ ದಿನಾಂಕ *</span>
+        </label>
+        <input type="date" id="lf-sow" class="lf-input">
+        <div class="date-presets-row">
+          <button class="preset-pill" onclick="setDateOffset(0)" data-k="date_today">Today</button>
+          <button class="preset-pill" onclick="setDateOffset(7)" data-k="date_7d">+7 days</button>
+          <button class="preset-pill" onclick="setDateOffset(14)" data-k="date_14d">+14 days</button>
+          <button class="preset-pill" onclick="setDateOffset(30)" data-k="date_30d">+30 days</button>
+        </div>
+      </div>
+
+      <!-- Mandi / Selling Price -->
+      <div class="land-form-group">
+        <label class="lf-label" for="lf-price">
+          <span class="lf-icon">🏷️</span>
+          <span data-k="p3_price_lbl">Crop Selling Price / ಬೆಳೆ ಮಾರಾಟದ ಬೆಲೆ (₹/qtl) *</span>
+        </label>
+        <div class="lf-input-row">
+          <span class="lf-prefix">₹</span>
+          <input type="number" id="lf-price" class="lf-input" min="1" placeholder="e.g. 2300" oninput="updatePriceInfo()">
+          <span class="lf-unit" data-k="unit_per_qtl">per qtl</span>
+        </div>
+        <div class="price-info-row" id="price-info-row"></div>
+      </div>
+
+      <!-- Expected Harvest Yield (User Input) -->
+      <div class="land-form-group">
+        <label class="lf-label" for="lf-yield">
+          <span class="lf-icon">⚖️</span>
+          <span data-k="p3_yield_lbl">Expected Harvest Yield / ನಿರೀಕ್ಷಿತ ಇಳುವರಿ (Quintals) *</span>
+        </label>
+        <div class="lf-input-row">
+          <input type="number" id="lf-yield" class="lf-input" min="0.1" step="0.5" placeholder="e.g. 25" oninput="updateEstimatePreview()">
+          <span class="lf-unit">Quintals (ಕ್ವಿಂಟಾಲ್)</span>
+        </div>
+        <div class="price-info-row" id="yield-info-row" style="color:var(--text-muted);font-size:0.8rem;"></div>
+      </div>
+
+      <!-- Weather Condition -->
+      <div class="land-form-group">
+        <label class="lf-label">
+          <span class="lf-icon">🌤️</span>
+          <span data-k="p3_weather_lbl">Expected Weather / ಹವಾಮಾನ</span>
+        </label>
+        <div class="weather-opts" id="weather-opts">
+          <label class="weather-opt active" data-w="0">
+            <input type="radio" name="weather" value="0" checked> <span data-k="w_norm">☀️ Normal</span>
+          </label>
+          <label class="weather-opt" data-w="1">
+            <input type="radio" name="weather" value="1"> <span data-k="w_low">🌧️ Low Rain</span>
+          </label>
+          <label class="weather-opt" data-w="2">
+            <input type="radio" name="weather" value="2"> <span data-k="w_heavy">⛈️ Heavy Rain</span>
+          </label>
+          <label class="weather-opt" data-w="3">
+            <input type="radio" name="weather" value="3"> <span data-k="w_dry">🌡️ Heat Wave</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Farmer Network Share -->
+      <div class="land-form-group full-width">
+        <label class="lf-label" for="lf-share">
+          <span class="lf-icon">👥</span>
+          <span data-k="p3_share_lbl">Farmer Network Share / ರೈತ ನೆಟ್ವರ್ಕ್ ಪಾಲು:</span> <strong id="share-val">40%</strong>
+        </label>
+        <div class="slider-wrap">
+          <span class="slider-label-l" data-k="share_low">Low Supply</span>
+          <input type="range" id="lf-share" class="lf-slider" min="0" max="100" value="40" step="5" oninput="$('#share-val').textContent=this.value+'%'">
+          <span class="slider-label-r" data-k="share_high">High Supply</span>
+        </div>
+        <p class="lf-hint" data-k="share_hint">Higher % = more farmers growing this crop = lower mandi price pressure</p>
+      </div>
+    </div>
+
+    <div class="page-bottom-bar">
+      <div class="estimate-preview" id="estimate-preview" style="display:none">
+        <span class="ep-item"><strong id="ep-plants">—</strong><small data-k="ep_density">Density</small></span>
+        <span class="ep-divider">|</span>
+        <span class="ep-item"><strong id="ep-water">—</strong><small data-k="ep_water">Water (mm)</small></span>
+        <span class="ep-divider">|</span>
+        <span class="ep-item"><strong id="ep-income">—</strong><small data-k="ep_income">Est. Income</small></span>
+      </div>
+      <button class="btn gold" id="p3-generate" onclick="generatePlan()">
+        <span data-k="p3_btn_generate">🌱 Generate My Farming Plan →</span>
+      </button>
+      <span id="p3-err" class="err-msg"></span>
+    </div>
+  </section>
+</div>
+
+<!-- ================================================================
+     PAGE 4: RESULTS / MY PLAN
+     ================================================================ -->
+<div id="p4" class="page">
+  <section class="page-section">
+    <div class="page-header-bar p4-header">
+      <button class="btn-back" onclick="goPage('p3')">
+        <span data-k="p4_btn_back">← Edit Land Details</span>
+      </button>
+      <div class="phb-left">
+        <div class="step-badge step-badge-done" data-k="p4_plan_ready">✅ Your Farming Plan is Ready</div>
+        <h2 class="page-title" id="p4-title">Farming Plan</h2>
+      </div>
+      <button class="btn secondary btn-sm" onclick="window.print()">
+        <span data-k="p4_btn_print">🖨️ Print Plan</span>
+      </button>
+    </div>
+
+    <!-- Loading state -->
+    <div id="p4-loading" class="plan-loading">
+      <div class="loading-spinner"></div>
+      <p data-k="p4_loading">Generating your personalised farming plan...</p>
+    </div>
+
+    <!-- Error state -->
+    <div id="p4-error" class="plan-error" style="display:none">
+      <span>⚠️</span><p id="p4-error-msg">An error occurred.</p>
+      <button class="btn secondary" onclick="goPage('p3')">
+        <span data-k="p4_err_back">← Go Back</span>
+      </button>
+    </div>
+
+    <!-- Results Container -->
+    <div id="p4-results" style="display:none">
+
+      <!-- SUMMARY BANNER -->
+      <div class="result-banner" id="rb-banner">
+        <div class="rb-crop">
+          <span class="rb-crop-icon" id="rb-icon">🌾</span>
+          <div>
+            <div class="rb-crop-name" id="rb-crop-name">—</div>
+            <div class="rb-meta" id="rb-meta">—</div>
+          </div>
+        </div>
+        <div class="rb-dates">
+          <div class="rb-date-item">📅 <span data-k="rb_sow_lbl">Sowing:</span> <strong id="rb-sow">—</strong></div>
+          <div class="rb-date-item">🌾 <span data-k="rb_harvest_lbl">Expected Harvest:</span> <strong id="rb-harvest">—</strong></div>
+          <div class="rb-date-item">📍 <span data-k="rb_dist_lbl">District:</span> <strong id="rb-district">—</strong></div>
+          <div class="rb-date-item">🪨 <span data-k="rb_soil_lbl">Soil:</span> <strong id="rb-soil">—</strong></div>
+        </div>
+      </div>
+
+      <!-- KEY FINANCIAL METRICS (Cost, Selling Price, Profit, Loss) -->
+      <div class="metrics-grid metrics-grid-4" id="metrics-grid">
+        <!-- Card 1: Total Cultivation Cost -->
+        <div class="metric-card green">
+          <div class="mc-icon">💰</div>
+          <div class="mc-title" data-k="fin_cost_title">Total Cultivation Cost / ಒಟ್ಟು ಕೃಷಿ ವೆಚ್ಚ</div>
+          <div class="mc-value" id="mc-cost">—</div>
+          <div class="mc-range" id="mc-cost-range">—</div>
+          <div class="mc-note" data-k="fin_cost_note">Labour + Fertilizer + Seeds + Protection + Ops</div>
+        </div>
+
+        <!-- Card 2: Crop Selling Price & Yield (User Inputs) -->
+        <div class="metric-card blue">
+          <div class="mc-icon">🏷️</div>
+          <div class="mc-title" data-k="fin_selling_title">Crop Selling Price & Yield / ಮಾರಾಟದ ಬೆಲೆ & ಇಳುವರಿ</div>
+          
+          <div style="display:flex;flex-direction:column;gap:6px;margin:6px 0;">
+            <!-- Price Row Input -->
+            <div style="display:flex;align-items:center;justify-content:space-between;background:#fff;padding:5px 8px;border:1.5px solid #BFDBFE;border-radius:6px;">
+              <span style="font-size:0.82rem;font-weight:700;color:var(--text-muted);" data-k="lbl_selling_price">Selling Price:</span>
+              <div style="display:flex;align-items:center;gap:3px;">
+                <span style="font-weight:800;color:#1D4ED8;">₹</span>
+                <input type="number" id="p4-selling-price-input" min="1" step="10" 
+                       style="width:90px;padding:2px 6px;border:1.5px solid #3B82F6;border-radius:4px;font-weight:800;font-size:1.15rem;background:#F8FAFC;color:#1D4ED8;text-align:right;" 
+                       oninput="onP4FinancialChange()">
+                <span style="font-size:0.82rem;color:var(--text-muted);font-weight:700;">/qtl</span>
+              </div>
+            </div>
+
+            <!-- Yield Row Input -->
+            <div style="display:flex;align-items:center;justify-content:space-between;background:#fff;padding:5px 8px;border:1.5px solid #BFDBFE;border-radius:6px;">
+              <span style="font-size:0.82rem;font-weight:700;color:var(--text-muted);" data-k="lbl_harvest_yield">Harvest Yield:</span>
+              <div style="display:flex;align-items:center;gap:3px;">
+                <input type="number" id="p4-yield-input" min="0.1" step="0.5" 
+                       style="width:85px;padding:2px 6px;border:1.5px solid #3B82F6;border-radius:4px;font-weight:800;font-size:1.15rem;background:#F8FAFC;color:#1D4ED8;text-align:right;" 
+                       oninput="onP4FinancialChange()">
+                <span style="font-size:0.82rem;color:var(--text-muted);font-weight:700;">qtl</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Total Harvest Sale -->
+          <div class="mc-range" id="mc-income-range" style="margin-top:4px;font-size:0.88rem;font-weight:600;color:var(--text-main);display:flex;justify-content:space-between;align-items:center;">
+            <span data-k="fin_total_sale_lbl">Total Harvest Sale:</span> 
+            <strong id="mc-income" style="color:#1D4ED8;font-size:1.15rem;">—</strong>
+          </div>
+          <div class="mc-note" id="mc-yield-label" style="margin-top:2px;font-size:0.75rem;">Yield × Price = Total Harvest Income</div>
+        </div>
+
+        <!-- Card 3: Profit -->
+        <div class="metric-card gold">
+          <div class="mc-icon">📈</div>
+          <div class="mc-title" data-k="fin_profit_card_title">Profit / ನಿವ್ವಳ ಲಾಭ</div>
+          <div class="mc-value" id="mc-profit" style="color:var(--primary);">—</div>
+          <div class="mc-range" id="mc-profit-sub">—</div>
+          <div class="mc-note" id="mc-profit-note" data-k="fin_profit_note">Net earnings after covering all costs</div>
+        </div>
+
+        <!-- Card 4: Loss -->
+        <div class="metric-card red-card">
+          <div class="mc-icon">📉</div>
+          <div class="mc-title" data-k="fin_loss_title">Loss / ನಷ್ಟ</div>
+          <div class="mc-value" id="mc-loss" style="color:var(--red);">—</div>
+          <div class="mc-range" id="mc-loss-sub">—</div>
+          <div class="mc-note" id="mc-bep">Break-even: ₹—/qtl</div>
+        </div>
+      </div>
+
+      <!-- HORIZONTAL TABS (Resources, Roadmap, Market) -->
+      <div class="result-tabs-horizontal" id="result-tabs">
+        <button class="rtab active" data-tab="resources">
+          <span class="rtab-icon">🌱</span>
+          <span data-k="tab_res">Resources & Fertilizers</span>
+        </button>
+        <button class="rtab" data-tab="roadmap">
+          <span class="rtab-icon">🗺️</span>
+          <span data-k="tab_roadmap">Crop Growth Roadmap</span>
+        </button>
+        <button class="rtab" data-tab="market">
+          <span class="rtab-icon">📈</span>
+          <span data-k="tab_market">Market Outlook</span>
+        </button>
+      </div>
+
+      <!-- TAB 1: RESOURCES -->
+      <div class="tab-panel active" id="tab-resources">
+        <div class="resources-grid">
+
+          <!-- Seed / Plant Requirement -->
+          <div class="res-card">
+            <div class="res-card-header">
+              <span class="res-icon">🌱</span>
+              <h3 class="res-title" data-k="res_seed_title">Seed / Plant Requirement</h3>
+            </div>
+            <div class="res-body" id="res-seed-body">
+              <div class="res-big-val" id="res-seed-val">—</div>
+              <div class="res-formula" id="res-seed-formula">—</div>
+              <div class="res-note" id="res-seed-note"></div>
+            </div>
+          </div>
+
+          <!-- Normal Water Requirement in mm -->
+          <div class="res-card">
+            <div class="res-card-header">
+              <span class="res-icon">💧</span>
+              <h3 class="res-title" data-k="res_water_title">Crop Water Requirement</h3>
+              <span class="res-badge" id="res-water-badge" data-k="res_water_badge">Normal mm depth</span>
+            </div>
+            <div class="res-body">
+              <div class="res-big-val" id="res-water-val">— mm</div>
+              <div class="res-formula" id="res-water-formula" data-k="res_water_formula">Normal depth across crop duration</div>
+              <div class="water-stages" id="water-stages"></div>
+            </div>
+          </div>
+
+          <!-- Fertilizer Plan -->
+          <div class="res-card res-card-wide">
+            <div class="res-card-header">
+              <span class="res-icon">🧪</span>
+              <h3 class="res-title" data-k="res_fert_title">Fertilizer Bag Requirements</h3>
+              <span class="res-badge" id="res-fert-badge">N:— · P:— · K:— kg</span>
+            </div>
+            <div class="res-body">
+              <div class="fert-bags-grid" id="fert-bags-grid"></div>
+            </div>
+          </div>
+
+          <!-- Cost Breakdown List -->
+          <div class="res-card res-card-wide">
+            <div class="res-card-header">
+              <span class="res-icon">💸</span>
+              <h3 class="res-title" data-k="res_cost_title">Itemized Cost Breakdown</h3>
+            </div>
+            <div class="res-body">
+              <div class="cost-breakdown-list" id="cost-breakdown-list"></div>
+              <div class="cost-total-row" id="cost-total-row"></div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Fertilizer Advisory Box with black font -->
+        <div class="fert-guidance-box" id="fert-guidance-box" style="margin-top:18px;">
+          <span class="tip-icon">💡</span>
+          <div style="flex:1;">
+            <div class="advisory-label" data-k="fert_advisory_lbl">Application Advisory / ಪೋಷಕಾಂಶ ಸಲಹೆ</div>
+            <span id="fert-tip-text" class="advisory-text">Select a crop above to see crop-specific fertilizer application timing and advisory tips.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- TAB 2: ROADMAP -->
+      <div class="tab-panel" id="tab-roadmap">
+        <div class="roadmap-header-info">
+          <div class="rm-header-left">
+            <h3 class="rm-main-title" data-k="rm_main_title">Crop Growth Stages & Step-by-Step Field Roadmap</h3>
+            <p class="roadmap-subtitle" id="roadmap-subtitle">Sequential timeline from land preparation to harvest</p>
+          </div>
+          <div class="rm-legend">
+            <span class="rm-legend-item"><span class="rm-legend-dot" style="background:var(--primary)"></span><span data-k="rm_leg_ops">Field Operations</span></span>
+            <span class="rm-legend-item"><span class="rm-legend-dot" style="background:var(--accent)"></span><span data-k="rm_leg_harv">Harvest</span></span>
+          </div>
+        </div>
+        <div class="roadmap-container-new" id="roadmap-container">
+          <!-- Rendered dynamically by JS with connected lines -->
+        </div>
+      </div>
+
+      <!-- TAB 3: MARKET -->
+      <div class="tab-panel" id="tab-market">
+        <div class="market-grid">
+
+          <!-- Price Pressure Gauge -->
+          <div class="market-card">
+            <div class="mc-header" data-k="mkt_press_title">📊 Price Pressure Outlook</div>
+            <div class="price-pressure-wrap" id="price-pressure-wrap"></div>
+          </div>
+
+          <!-- 5-Day Price Trend -->
+          <div class="market-card market-card-wide">
+            <div class="mc-header" data-k="mkt_trend_title">📈 5-Day APMC Price Trend (₹/qtl)</div>
+            <div class="price-chart-wrap" id="price-chart-wrap">
+              <canvas id="price-chart" width="600" height="220"></canvas>
+            </div>
+            <div class="price-chart-legend" id="price-chart-legend"></div>
+          </div>
+
+          <!-- Market Outlook Percentage -->
+          <div class="market-card">
+            <div class="mc-header" data-k="mkt_prob_title">🏷️ Market Outlook Probability (%)</div>
+            <div class="outlook-wrap" id="outlook-wrap"></div>
+          </div>
+
+
+        </div>
+      </div>
+
+      <!-- Action to Navigate to Farmer Community -->
+      <div class="plan-next-action-bar">
+        <div>
+          <h4 style="margin:0 0 4px; color:var(--text-main);" data-k="p4_connect_h4">Want to connect with other farmers?</h4>
+          <p style="margin:0; font-size:0.85rem; color:var(--text-muted);" data-k="p4_connect_p">Share knowledge and ask advice from experienced farmers in your district.</p>
+        </div>
+        <button class="btn gold" onclick="goPage('p5')"><span data-k="p4_btn_comm">👥 Open Farmer Community Network →</span></button>
+      </div>
+
+    </div><!-- /#p4-results -->
+  </section>
+</div>
+
+<!-- ================================================================
+     PAGE 5: FARMER COMMUNITY NETWORK (Dedicated Page)
+     ================================================================ -->
+<div id="p5" class="page">
+  <section class="page-section">
+    <div class="page-header-bar">
+      <button class="btn-back" onclick="goPage('p4')"><span data-k="p5_btn_back">← Back to My Plan</span></button>
+      <div class="phb-left">
+        <div class="step-badge" data-k="p5_step_badge">Karnataka Farmer Network</div>
+        <h2 class="page-title" data-k="p5_title">Farmer Community Network / ರೈತ ಸಮುದಾಯ</h2>
+        <p class="page-subtitle" data-k="p5_sub">Connect and share practical farming advice with experienced growers across Karnataka's 31 districts</p>
+      </div>
+    </div>
+
+    <!-- Top Feature Banners: Subscription Pass & Commission Program -->
+    <div class="community-top-cards">
+      
+      <!-- Subscription Pass Card -->
+      <div class="comm-feature-card subscription-card">
+        <div class="cfc-header">
+          <div class="cfc-title-box">
+            <span class="cfc-icon">👑</span>
+            <div>
+              <h3 class="cfc-title" data-k="pass_title">KrishiPath Farmer Contact Pass / ಸಂಪರ್ಕ ಪಾಸ್</h3>
+              <p class="cfc-sub" data-k="pass_sub">Protecting Karnataka farmers from spam. Phone numbers are masked for privacy.</p>
+            </div>
+          </div>
+          <span class="sub-status-pill" id="sub-status-pill">🔒 Free Tier (Numbers Masked)</span>
+        </div>
+        <div class="cfc-body">
+          <div class="sub-perks">
+            <span data-k="pass_p1">✓ Verified progressive growers</span>
+            <span data-k="pass_p2">✓ Direct phone calling</span>
+            <span data-k="pass_p3">✓ WhatsApp advisory support</span>
+          </div>
+          <div class="sub-actions">
+            <button class="btn gold" id="sub-action-btn" onclick="openSubscriptionModal()"><span data-k="pass_btn_activate">⚡ Activate Contact Pass (Free Trial / ₹99)</span></button>
+            <button class="btn-sm secondary" id="sub-toggle-btn" onclick="toggleSubscriptionState()" style="display:none;"><span data-k="pass_btn_remask">🔒 Re-mask Numbers</span></button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Commission & Referral Wallet Card -->
+      <div class="comm-feature-card wallet-card">
+        <div class="cfc-header">
+          <div class="cfc-title-box">
+            <span class="cfc-icon">💰</span>
+            <div>
+              <h3 class="cfc-title" data-k="wallet_card_title">Farmer Commission & Bank Payout Wallet / ವಾಲೆಟ್</h3>
+              <p class="cfc-sub" data-k="wallet_card_sub">Earn ₹100 instant DBT grant on joining + ₹25 direct commission for every referred farmer!</p>
+            </div>
+          </div>
+          <span class="wallet-badge" id="wallet-balance-badge">₹0.00 Balance</span>
+        </div>
+        <div class="cfc-body">
+          <div class="wallet-grid">
+            <div class="wg-item">
+              <span class="wg-label" data-k="wg_lbl_wallet">Your Wallet</span>
+              <span class="wg-val" id="wg-wallet-val">₹0.00</span>
+            </div>
+            <div class="wg-item">
+              <span class="wg-label" data-k="wg_lbl_code">Your Referral Code</span>
+              <span class="wg-code" id="wg-ref-code">Register Below</span>
+            </div>
+            <div class="wg-item">
+              <span class="wg-label" data-k="wg_lbl_rate">Commission Rate</span>
+              <span class="wg-val text-green" data-k="wg_val_rate">₹25 / Referral</span>
+            </div>
+          </div>
+          <button class="btn-sm secondary" id="copy-ref-btn" onclick="copyReferralCode()" style="margin-top:10px; width:100%; display:none;">
+            <span data-k="btn_copy_ref">📋 Copy Referral Code</span>
+          </button>
+
+          <!-- Linked Bank Account & DBT Payout Status -->
+          <div class="linked-bank-card" id="linked-bank-card" style="display:none;">
+            <div class="lbc-info">
+              <span style="font-size:1.4rem;">🏛️</span>
+              <div>
+                <div class="lbc-bank-name" id="lbc-bank-name">Canara Bank</div>
+                <div class="lbc-acc" id="lbc-acc">A/C: •••• •••• 1234</div>
+              </div>
+            </div>
+            <div style="display:flex; align-items:center; gap:8px;">
+              <span class="lbc-status" data-k="lbc_status_active">✅ DBT Active</span>
+              <button class="btn-sm secondary" id="btn-withdraw-bank" onclick="withdrawEarningsToBank()" data-k="btn_withdraw_txt">💸 Withdraw to Bank</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="community-grid">
+      <!-- Add Farmer Card (With Bank Details & DBT Transfer) -->
+      <div class="comm-card">
+        <div class="cf-banner-notice" data-k="cf_banner_dbt">
+          🎁 <strong>Instant Bank Deposit:</strong> Enter your bank details below to receive an official <strong>₹100 DBT Grant</strong> directly into your bank account!
+        </div>
+        <h3 class="comm-title" data-k="comm_form_title">🌱 + Join Karnataka Farmer Network & Bank DBT</h3>
+        <p style="font-size:0.85rem; color:var(--text-muted); margin-bottom:16px;" data-k="comm_form_sub">List your farm experience so neighbouring farmers can exchange crop advice.</p>
+        <div class="comm-form" id="comm-form">
+          <div class="cf-field">
+            <label data-k="cf_name_lbl">Farmer Name / ಹೆಸರು *</label>
+            <input type="text" id="cf-name" class="cf-input" placeholder="Your full name" maxlength="60" data-k-placeholder="cf_name_ph">
+          </div>
+          <div class="cf-field">
+            <label data-k="cf_phone_lbl">Mobile Number / ಮೊಬೈಲ್ ಸಂಖ್ಯೆ *</label>
+            <input type="tel" id="cf-phone" class="cf-input" placeholder="10-digit mobile number" maxlength="10" data-k-placeholder="cf_phone_ph">
+          </div>
+          <div class="cf-field">
+            <label data-k="cf_dist_lbl">District / ಜಿಲ್ಲೆ *</label>
+            <select id="cf-district" class="cf-input">
+              <option value="" data-k="sel_district_opt">-- Select District --</option>
+            </select>
+          </div>
+          <div class="cf-field">
+            <label data-k="cf_crop_lbl">Main Crop Grown / ಮುಖ್ಯ ಬೆಳೆ *</label>
+            <select id="cf-crop" class="cf-input">
+              <option value="" data-k="sel_crop_opt">-- Select Crop --</option>
+            </select>
+          </div>
+          <div class="cf-field">
+            <label data-k="cf_years_lbl">Years of Farming Experience / ಅನುಭವ (ವರ್ಷಗಳು)</label>
+            <input type="number" id="cf-years" class="cf-input" min="0" max="80" placeholder="e.g. 15">
+          </div>
+
+          <!-- Direct Benefit Transfer (DBT) Bank Account Details -->
+          <div class="cf-bank-section">
+            <div class="cf-bank-header">
+              <span class="cf-bank-icon">🏛️</span>
+              <div>
+                <h4 class="cf-bank-title" data-k="cf_bank_title">Direct Benefit Transfer (DBT) Bank Account / ಬ್ಯಾಂಕ್ ಖಾತೆ ವಿವರ</h4>
+                <p class="cf-bank-sub" data-k="cf_bank_sub">Enter your bank details to receive ₹100 instant welcome grant directly to your bank account.</p>
+              </div>
+            </div>
+            <div class="cf-field">
+              <label data-k="cf_bank_name_lbl">Bank Name / ಬ್ಯಾಂಕ್ ಹೆಸರು *</label>
+              <select id="cf-bank-name" class="cf-input">
+                <option value="Canara Bank (ಕೆನರಾ ಬ್ಯಾಂಕ್)">Canara Bank (ಕೆನರಾ ಬ್ಯಾಂಕ್)</option>
+                <option value="State Bank of India (SBI)">State Bank of India (SBI - ಸ್ಟೇಟ್ ಬ್ಯಾಂಕ್)</option>
+                <option value="Karnataka Bank (ಕರ್ನಾಟಕ ಬ್ಯಾಂಕ್)">Karnataka Bank (ಕರ್ನಾಟಕ ಬ್ಯಾಂಕ್)</option>
+                <option value="Karnataka Gramin Bank (ಕರ್ನಾಟಕ ಗ್ರಾಮೀಣ ಬ್ಯಾಂಕ್)">Karnataka Gramin Bank (ಕರ್ನಾಟಕ ಗ್ರಾಮೀಣ ಬ್ಯಾಂಕ್)</option>
+                <option value="Bank of Baroda (ಬ್ಯಾಂಕ್ ಆಫ್ ಬರೋಡಾ)">Bank of Baroda (ಬ್ಯಾಂಕ್ ಆಫ್ ಬರೋಡಾ)</option>
+                <option value="Union Bank of India (ಯೂನಿಯನ್ ಬ್ಯಾಂಕ್)">Union Bank of India (ಯೂನಿಯನ್ ಬ್ಯಾಂಕ್)</option>
+                <option value="HDFC Bank">HDFC Bank</option>
+                <option value="ICICI Bank">ICICI Bank</option>
+                <option value="Primary Agricultural Co-operative (PACS)">Primary Agricultural Co-operative (PACS)</option>
+              </select>
+            </div>
+            <div class="cf-field">
+              <label data-k="cf_acc_lbl">Bank Account Number / ಖಾತೆ ಸಂಖ್ಯೆ *</label>
+              <input type="text" id="cf-acc-num" class="cf-input" placeholder="e.g. 102938475612" maxlength="20" data-k-placeholder="cf_acc_ph">
+            </div>
+            <div class="cf-field">
+              <label data-k="cf_ifsc_lbl">Bank IFSC Code / ಐ.ಎಫ್.ಎಸ್.ಸಿ ಕೋಡ್ *</label>
+              <input type="text" id="cf-ifsc" class="cf-input" placeholder="e.g. CNRB0001234 or SBIN0040123" maxlength="11" style="text-transform:uppercase;" data-k-placeholder="cf_ifsc_ph">
+            </div>
+            <div class="cf-field">
+              <label data-k="cf_upi_lbl">UPI ID / PhonePe / GPay (Optional / ಐಚ್ಛಿಕ)</label>
+              <input type="text" id="cf-upi" class="cf-input" placeholder="e.g. 9845012345@upi" maxlength="50" data-k-placeholder="cf_upi_ph">
+            </div>
+          </div>
+
+          <label class="cf-consent">
+            <input type="checkbox" id="cf-consent" checked>
+            <span data-k="cf_consent_txt">I consent to share my name and phone with other farmers on this Karnataka portal.</span>
+          </label>
+          <button class="btn gold" onclick="submitFarmer()" style="width:100%" id="btn-submit-farmer">
+            <span data-k="cf_btn_submit">🌾 Join Karnataka Network & Transfer ₹100 to My Bank</span>
+          </button>
+          <p id="cf-msg" class="cf-msg"></p>
+        </div>
+      </div>
+
+      <!-- Farmer Directory Card -->
+      <div class="comm-card">
+        <div class="fl-header">
+          <div>
+            <h3 class="comm-title" style="margin:0;"><span data-k="comm_dir_title">Registered Progressive Farmers</span> (<span id="farmers-count">0</span>)</h3>
+            <p style="font-size:0.8rem; color:var(--text-muted); margin-top:2px;" data-k="comm_dir_sub">Popular progressive farmers and peers across Karnataka</p>
+          </div>
+          <select id="fl-filter-district" class="fl-filter" onchange="loadFarmers(this.value)">
+            <option value="" data-k="fl_filter_all">All Karnataka Districts</option>
+          </select>
+        </div>
+        <div id="farmer-list" class="farmer-list">
+          <p class="fl-loading" data-k="fl_loading">Loading farmer listings...</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- Subscription Modal -->
+<div class="modal-overlay" id="subscription-modal" style="display:none;" onclick="if(event.target === this) closeSubscriptionModal()">
+  <div class="modal-card">
+    <div class="mc-header">
+      <div style="display:flex; align-items:center; gap:8px;">
+        <span style="font-size:1.4rem;">👑</span>
+        <h3 style="margin:0; font-size:1.15rem; color:var(--text-main);" data-k="sub_modal_title">Unlock Farmer Contact Pass</h3>
+      </div>
+      <button class="modal-close-btn" onclick="closeSubscriptionModal()">✕</button>
+    </div>
+    <div class="mc-body">
+      <p style="font-size:0.9rem; color:var(--text-muted); line-height:1.5;" data-k="sub_modal_desc">
+        Get direct phone and WhatsApp access to verified Karnataka progressive farmers, agricultural university awardees, and local mentors.
+      </p>
+      <div class="plan-options">
+        <div class="po-card selected">
+          <div class="po-badge" data-k="po_badge_popular">Popular</div>
+          <div class="po-title" data-k="po_title_pass">Farmer Community Pass</div>
+          <div class="po-price">₹0 <span class="po-strike">₹99</span> <span class="po-free-tag" data-k="po_free_tag">Free Trial Pass</span></div>
+          <ul class="po-list">
+            <li data-k="po_l1">✓ 100% Unmasked Direct Phone Numbers</li>
+            <li data-k="po_l2">✓ One-tap Calling to 15+ Progressive Farmers</li>
+            <li data-k="po_l3">✓ WhatsApp Direct Agri Advisory</li>
+            <li data-k="po_l4">✓ Karnataka Organic & High-Yield Mentors</li>
+          </ul>
+        </div>
+      </div>
+      <div class="mc-footer">
+        <button class="btn gold" style="width:100%; font-size:1rem; padding:12px;" onclick="activateSubscription()" data-k="sub_modal_activate">🔓 Activate Contact Pass Instantly</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- DBT Bank Transfer Receipt Modal -->
+<div class="modal-overlay" id="dbt-receipt-modal" style="display:none;" onclick="if(event.target === this) closeDbtModal()">
+  <div class="modal-card dbt-modal-card">
+    <div class="mc-header dbt-mc-header">
+      <div style="display:flex; align-items:center; gap:10px;">
+        <span style="font-size:1.8rem;">🏛️</span>
+        <div>
+          <h3 style="margin:0; font-size:1.1rem; color:#ffffff;" data-k="dbt_modal_title">Government of Karnataka · DBT Payment Receipt</h3>
+          <p style="margin:2px 0 0; font-size:0.78rem; color:#A7F3D0;" data-k="dbt_modal_sub">ಕರ್ನಾಟಕ ಸರ್ಕಾರ · ಕೃಷಿ ಇಲಾಖೆ ನೇರ ನಗದು ವರ್ಗಾವಣೆ ಪಾವತಿ ರಶೀದಿ</p>
+        </div>
+      </div>
+      <button class="modal-close-btn" style="color:#ffffff;" onclick="closeDbtModal()">✕</button>
+    </div>
+    <div class="mc-body dbt-body">
+      <div class="dbt-success-badge">
+        <span class="dbt-check">✅</span>
+        <div class="dbt-amt-title" id="dbt-amt-display">₹100.00</div>
+        <div class="dbt-status-tag" data-k="dbt_status_tag">CREDITED TO BANK ACCOUNT / ಖಾತೆಗೆ ಜಮೆಯಾಗಿದೆ</div>
+      </div>
+      <div class="dbt-receipt-grid">
+        <div class="dr-row"><span class="dr-lbl" data-k="dr_utr">Transaction UTR Ref:</span><span class="dr-val font-mono" id="dbt-utr">DBT-KA-2026849204</span></div>
+        <div class="dr-row"><span class="dr-lbl" data-k="dr_holder">Beneficiary Name:</span><span class="dr-val" id="dbt-name">Ramesh Kumar</span></div>
+        <div class="dr-row"><span class="dr-lbl" data-k="dr_bank">Bank Name:</span><span class="dr-val" id="dbt-bank">Canara Bank</span></div>
+        <div class="dr-row"><span class="dr-lbl" data-k="dr_acc">Account Number:</span><span class="dr-val font-mono" id="dbt-acc">•••• •••• 4512</span></div>
+        <div class="dr-row"><span class="dr-lbl" data-k="dr_ifsc">IFSC Code:</span><span class="dr-val font-mono" id="dbt-ifsc">CNRB0001234</span></div>
+        <div class="dr-row"><span class="dr-lbl" data-k="dr_time">Transfer Timestamp:</span><span class="dr-val" id="dbt-time">Just now</span></div>
+        <div class="dr-row"><span class="dr-lbl" data-k="dr_scheme">Scheme / Purpose:</span><span class="dr-val text-green font-bold" data-k="dr_scheme_val">KrishiPath Progressive Farmer Community Grant</span></div>
+      </div>
+      <div class="dbt-footer-note" data-k="dbt_note">
+        💡 This amount has been credited directly to your registered bank account via RTGS/NEFT/IMPS DBT gateway. Any subsequent referral earnings (₹25/referral) can also be transferred to this bank account instantly.
+      </div>
+      <div class="dbt-actions">
+        <button class="btn gold" onclick="closeDbtModal()" data-k="dbt_close">✓ Done / ಮುಕ್ತಾಯ</button>
+        <button class="btn-sm secondary" onclick="window.print()" data-k="dbt_print">🖨️ Print Receipt / ರಶೀದಿ ಮುದ್ರಿಸಿ</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

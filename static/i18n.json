@@ -1,0 +1,376 @@
+{
+ "U": {
+  "n1": [
+   "Planner",
+   "ಯೋಜನೆ"
+  ],
+  "n2": [
+   "Farmers",
+   "ರೈತರು"
+  ],
+  "n3": [
+   "About",
+   "ಬಗ್ಗೆ"
+  ],
+  "n4": [
+   "Future scope",
+   "ಮುಂದಿನ ಹಂತ"
+  ],
+  "h1": [
+   "Right crop. Right steps. Right time.",
+   "ಸರಿಯಾದ ಬೆಳೆ. ಸರಿಯಾದ ಹಂತ. ಸರಿಯಾದ ಸಮಯ."
+  ],
+  "hp": [
+   "A step-by-step farming guide for Karnataka. Pick a crop, add your land, and get the roadmap, resources, costs and market outlook.",
+   "ಕರ್ನಾಟಕಕ್ಕೆ ಹಂತ ಹಂತದ ಕೃಷಿ ಮಾರ್ಗದರ್ಶಿ. ಬೆಳೆ ಆರಿಸಿ, ಜಮೀನು ವಿವರ ನೀಡಿ — ಮಾರ್ಗಸೂಚಿ, ಸಂಪನ್ಮೂಲ, ವೆಚ್ಚ, ಮಾರುಕಟ್ಟೆ ಅಂದಾಜು ಪಡೆಯಿರಿ."
+  ],
+  "cta": [
+   "Start planning",
+   "ಯೋಜನೆ ಆರಂಭಿಸಿ"
+  ],
+  "s1": [
+   "Pick a crop",
+   "ಬೆಳೆ ಆರಿಸಿ"
+  ],
+  "s2": [
+   "Add land details",
+   "ಜಮೀನು ವಿವರ ನೀಡಿ"
+  ],
+  "sr": [
+   "Search crop",
+   "ಬೆಳೆ ಹುಡುಕಿ"
+  ],
+  "all": [
+   "All",
+   "ಎಲ್ಲಾ"
+  ],
+  "dist": [
+   "District",
+   "ಜಿಲ್ಲೆ"
+  ],
+  "ac": [
+   "Land (acres)",
+   "ಜಮೀನು (ಎಕರೆ)"
+  ],
+  "sow": [
+   "Sowing / planting date",
+   "ಬಿತ್ತನೆ / ನಾಟಿ ದಿನಾಂಕ"
+  ],
+  "sh": [
+   "Nearby farmers growing this crop",
+   "ಈ ಬೆಳೆ ಬೆಳೆಯುವ ಸುತ್ತಲಿನ ರೈತರು"
+  ],
+  "wx": [
+   "Weather expected near harvest",
+   "ಕೊಯ್ಲು ಸಮಯದ ಹವಾಮಾನ"
+  ],
+  "w0": [
+   "Normal",
+   "ಸಾಮಾನ್ಯ"
+  ],
+  "w1": [
+   "Low rain",
+   "ಕಡಿಮೆ ಮಳೆ"
+  ],
+  "w2": [
+   "Heavy rain",
+   "ಭಾರಿ ಮಳೆ"
+  ],
+  "w3": [
+   "Heat wave",
+   "ಬಿಸಿಗಾಳಿ"
+  ],
+  "lp": [
+   "Local prices (edit)",
+   "ಸ್ಥಳೀಯ ದರ (ಬದಲಿಸಿ)"
+  ],
+  "wg": [
+   "Wage ₹/day",
+   "ಕೂಲಿ ₹/ದಿನ"
+  ],
+  "ur": [
+   "Urea ₹/45 kg",
+   "ಯೂರಿಯಾ ₹/45 ಕೆಜಿ"
+  ],
+  "ss": [
+   "SSP ₹/50 kg",
+   "ಎಸ್‌ಎಸ್‌ಪಿ ₹/50 ಕೆಜಿ"
+  ],
+  "mp": [
+   "MOP ₹/50 kg",
+   "ಎಂಒಪಿ ₹/50 ಕೆಜಿ"
+  ],
+  "pr": [
+   "Today’s mandi price ₹/quintal",
+   "ಇಂದಿನ ಮಂಡಿ ಬೆಲೆ ₹/ಕ್ವಿಂಟಾಲ್"
+  ],
+  "go": [
+   "Get my plan",
+   "ನನ್ನ ಯೋಜನೆ ನೋಡಿ"
+  ],
+  "tr": [
+   "Roadmap",
+   "ಮಾರ್ಗಸೂಚಿ"
+  ],
+  "te": [
+   "Estimates",
+   "ಅಂದಾಜು"
+  ],
+  "th": [
+   "Crop health",
+   "ಬೆಳೆ ಆರೋಗ್ಯ"
+  ],
+  "tm": [
+   "Market outlook",
+   "ಮಾರುಕಟ್ಟೆ ಅಂದಾಜು"
+  ],
+  "e1": [
+   "Pick a crop first.",
+   "ಮೊದಲು ಬೆಳೆ ಆರಿಸಿ."
+  ],
+  "e2": [
+   "Enter land area above 0.",
+   "0ಕ್ಕಿಂತ ಹೆಚ್ಚು ಎಕರೆ ನಮೂದಿಸಿ."
+  ],
+  "cm": [
+   "Farmer community",
+   "ರೈತರ ಸಮುದಾಯ"
+  ],
+  "cmn": [
+   "Add top farmers of Karnataka so new farmers can call and learn from them. Entries are saved in this browser only.",
+   "ಕರ್ನಾಟಕದ ಮುಂಚೂಣಿ ರೈತರನ್ನು ಸೇರಿಸಿ, ಹೊಸ ರೈತರು ಕರೆ ಮಾಡಿ ಕಲಿಯಬಹುದು. ಮಾಹಿತಿ ಈ ಬ್ರೌಸರ್‌ನಲ್ಲಿ ಮಾತ್ರ ಉಳಿಯುತ್ತದೆ."
+  ],
+  "nm": [
+   "Farmer name",
+   "ರೈತರ ಹೆಸರು"
+  ],
+  "ph": [
+   "Phone (10 digits)",
+   "ಫೋನ್ (10 ಅಂಕೆ)"
+  ],
+  "cr": [
+   "Main crop",
+   "ಮುಖ್ಯ ಬೆಳೆ"
+  ],
+  "ex": [
+   "Years farming",
+   "ಕೃಷಿ ವರ್ಷಗಳು"
+  ],
+  "cons": [
+   "This farmer agreed to share their name and phone number.",
+   "ಈ ರೈತರು ತಮ್ಮ ಹೆಸರು, ಫೋನ್ ಹಂಚಲು ಒಪ್ಪಿದ್ದಾರೆ."
+  ],
+  "add": [
+   "Add farmer",
+   "ರೈತರನ್ನು ಸೇರಿಸಿ"
+  ],
+  "fdist": [
+   "Show district",
+   "ಜಿಲ್ಲೆ ತೋರಿಸಿ"
+  ],
+  "em": [
+   "No farmers yet. Add the first one above.",
+   "ಇನ್ನೂ ರೈತರಿಲ್ಲ. ಮೇಲೆ ಮೊದಲನೆಯವರನ್ನು ಸೇರಿಸಿ."
+  ],
+  "ce": [
+   "Enter a valid name, 10-digit mobile number and tick consent.",
+   "ಸರಿಯಾದ ಹೆಸರು, 10 ಅಂಕೆಯ ಮೊಬೈಲ್ ಸಂಖ್ಯೆ ನೀಡಿ ಮತ್ತು ಒಪ್ಪಿಗೆ ಗುರುತಿಸಿ."
+  ],
+  "pb": [
+   "The problem",
+   "ಸಮಸ್ಯೆ"
+  ],
+  "ap": [
+   "Our approach",
+   "ನಮ್ಮ ವಿಧಾನ"
+  ],
+  "ft": [
+   "Key features",
+   "ಮುಖ್ಯ ಸೌಲಭ್ಯಗಳು"
+  ],
+  "mo": [
+   "Market outlook: two factors",
+   "ಮಾರುಕಟ್ಟೆ ಅಂದಾಜು: ಎರಡು ಅಂಶ"
+  ],
+  "im": [
+   "Implementation",
+   "ಅನುಷ್ಠಾನ"
+  ],
+  "end": [
+   "Right crop. Right steps. Right time.",
+   "ಸರಿಯಾದ ಬೆಳೆ. ಸರಿಯಾದ ಹಂತ. ಸರಿಯಾದ ಸಮಯ."
+  ],
+  "disc": [
+   "KrishiPath AI supports decisions. It does not replace agricultural officers, soil tests or your own judgment.",
+   "ಕೃಷಿಪಥ ಎಐ ನಿರ್ಧಾರಕ್ಕೆ ಸಹಾಯಕ ಮಾತ್ರ. ಕೃಷಿ ಅಧಿಕಾರಿ, ಮಣ್ಣು ಪರೀಕ್ಷೆ ಅಥವಾ ನಿಮ್ಮ ತೀರ್ಮಾನಕ್ಕೆ ಬದಲಿ ಅಲ್ಲ."
+  ]
+ },
+ "PB": [
+  [
+   "Not knowing what to do at each stage of farming",
+   "ಕೃಷಿಯ ಪ್ರತಿ ಹಂತದಲ್ಲಿ ಏನು ಮಾಡಬೇಕೆಂದು ತಿಳಿಯದಿರುವುದು"
+  ],
+  [
+   "Not knowing how many plants fit their land",
+   "ಜಮೀನಿಗೆ ಎಷ್ಟು ಗಿಡ ಬೇಕೆಂದು ತಿಳಿಯದಿರುವುದು"
+  ],
+  [
+   "Guessing the water, fertilizer, labour and cost needed",
+   "ನೀರು, ಗೊಬ್ಬರ, ಕೂಲಿ, ವೆಚ್ಚ ಊಹಿಸುವುದು"
+  ],
+  [
+   "Picking a crop that many others also grow, so prices fall",
+   "ಹಲವರು ಬೆಳೆಯುವ ಬೆಳೆ ಆರಿಸಿ ಬೆಲೆ ಕುಸಿಯುವುದು"
+  ]
+ ],
+ "AP": [
+  [
+   "Pick a crop",
+   "ಬೆಳೆ ಆರಿಸಿ",
+   "Choose from Karnataka crops."
+  ],
+  [
+   "Add land details",
+   "ಜಮೀನು ವಿವರ ನೀಡಿ",
+   "Location, acres and language."
+  ],
+  [
+   "Get the roadmap",
+   "ಮಾರ್ಗಸೂಚಿ ಪಡೆಯಿರಿ",
+   "Every step, land prep to harvest."
+  ],
+  [
+   "See estimates",
+   "ಅಂದಾಜು ನೋಡಿ",
+   "Plants, labour, water, fertilizer, cost."
+  ],
+  [
+   "Check the market",
+   "ಮಾರುಕಟ್ಟೆ ನೋಡಿ",
+   "Will prices rise or fall at harvest?"
+  ]
+ ],
+ "FT": [
+  [
+   "Step-by-step roadmap",
+   "ಹಂತ ಹಂತದ ಮಾರ್ಗಸೂಚಿ",
+   "From land preparation to harvest, in the right order."
+  ],
+  [
+   "Acreage-based planning",
+   "ಎಕರೆ ಆಧಾರಿತ ಯೋಜನೆ",
+   "Plant count and spacing worked out for your land."
+  ],
+  [
+   "Resource estimates",
+   "ಸಂಪನ್ಮೂಲ ಅಂದಾಜು",
+   "Water, fertilizer and labour for your acres."
+  ],
+  [
+   "Cost estimate",
+   "ವೆಚ್ಚ ಅಂದಾಜು",
+   "Approximate cost with prices you can edit."
+  ],
+  [
+   "Disease prevention",
+   "ರೋಗ ತಡೆ",
+   "Spot common crop problems early."
+  ],
+  [
+   "Kannada and English",
+   "ಕನ್ನಡ ಮತ್ತು ಇಂಗ್ಲಿಷ್",
+   "Simple words in your own language."
+  ]
+ ],
+ "MO": [
+  [
+   "Weather and climate",
+   "ಹವಾಮಾನ",
+   "Changes in rain and temperature can raise or cut crop yield, and move prices near harvest."
+  ],
+  [
+   "Number of farmers",
+   "ರೈತರ ಸಂಖ್ಯೆ",
+   "If many farmers grow the same crop at the same time, supply rises and prices can fall."
+  ],
+  [
+   "Indicative outlook: Low, Medium or High",
+   "ಅಂದಾಜು: ಕಡಿಮೆ, ಮಧ್ಯಮ, ಹೆಚ್ಚು",
+   "Mixed with past market prices and the expected harvest time. An estimate to help choose a crop."
+  ]
+ ],
+ "IM": [
+  [
+   "Data",
+   "ಡೇಟಾ",
+   "Karnataka crop details, farming steps, weather, market prices and crop choices by area."
+  ],
+  [
+   "Logic",
+   "ತರ್ಕ",
+   "Rules scale plants, inputs and cost to acres. The outlook mixes weather, supply and prices."
+  ],
+  [
+   "Farmer screen",
+   "ರೈತರ ಪರದೆ",
+   "Pick crop, place, acres and language. Roadmap stage by stage. Estimates as ranges."
+  ]
+ ],
+ "FU": [
+  [
+   "More crops and states",
+   "ಹೆಚ್ಚು ಬೆಳೆ, ರಾಜ್ಯಗಳು",
+   "Extend the crop list across India."
+  ],
+  [
+   "Voice and more languages",
+   "ಧ್ವನಿ ಮತ್ತು ಹೆಚ್ಚು ಭಾಷೆ",
+   "Speak and listen in more languages."
+  ],
+  [
+   "Photo-based disease check",
+   "ಫೋಟೋ ಮೂಲಕ ರೋಗ ಪತ್ತೆ",
+   "Take a leaf photo to find the problem."
+  ],
+  [
+   "Live alerts",
+   "ನೇರ ಎಚ್ಚರಿಕೆ",
+   "Weather and mandi price updates."
+  ],
+  [
+   "Link to support",
+   "ಬೆಂಬಲ ಸಂಪರ್ಕ",
+   "Connect to buyers, schemes and soil tests."
+  ]
+ ],
+ "CAT": {
+  "C": [
+   "Cereals & millets",
+   "ಧಾನ್ಯ"
+  ],
+  "P": [
+   "Pulses",
+   "ಕಾಳು"
+  ],
+  "O": [
+   "Oilseeds",
+   "ಎಣ್ಣೆಕಾಳು"
+  ],
+  "N": [
+   "Commercial",
+   "ವಾಣಿಜ್ಯ"
+  ],
+  "V": [
+   "Vegetables",
+   "ತರಕಾರಿ"
+  ],
+  "F": [
+   "Fruits",
+   "ಹಣ್ಣು"
+  ],
+  "T": [
+   "Plantation & spices",
+   "ತೋಟ / ಸಾಂಬಾರ"
+  ]
+ }
+}

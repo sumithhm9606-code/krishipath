@@ -1,0 +1,1256 @@
+{
+  "Paddy": [
+    {
+      "name": "Rice Blast Disease",
+      "name_kn": "ಭತ್ತದ ಬೆಂಕಿ ರೋಗ (ಬ್ಲಾಸ್ಟ್)",
+      "name_hi": "Rice Blast Disease",
+      "severity": "Severe",
+      "image": "/diseases/paddy_1.jpg",
+      "symptoms": "Spindle-shaped or diamond-shaped lesions with ash-grey or white centers and brown margins on leaves.",
+      "treatment_chemical": "Spray Tricyclazole 75 WP @ 0.6 g/L or Isoprothiolane 40 EC @ 1.5 ml/L or Kasugamycin 3% SL @ 2.5 ml/L at initial appearance of spots.",
+      "treatment_organic": "Spray Pseudomonas fluorescens (biocontrol agent) @ 5 g/L or 10 g/kg seed treatment."
+    },
+    {
+      "name": "Brown Spot Disease",
+      "name_kn": "ಭತ್ತದ ಕಂದು ಚುಕ್ಕೆ ರೋಗ",
+      "name_hi": "Brown Spot Disease",
+      "severity": "Moderate",
+      "image": "/diseases/paddy_2.jpg",
+      "symptoms": "Small, oval or circular brown spots with dark brown margins and greyish centers on leaves and glumes.",
+      "treatment_chemical": "Spray Mancozeb 75 WP @ 2.5 g/L or Propiconazole 25 EC @ 1 ml/L or Hexaconazole 5 EC @ 2 ml/L during boot leaf stage..",
+      "treatment_organic": "Foliar spray of 5% Neem Seed Kernel Extract (NSKE) or Panchagavya (3%)."
+    }
+  ],
+  "Ragi": [
+    {
+      "name": "Finger Millet Blast (Leaf & Neck Blast)",
+      "name_kn": "ರಾಗಿ ಬೆಂಕಿ ರೋಗ (ಎಲೆ ಮತ್ತು ಕುತ್ತಿಗೆ ಬ್ಲಾಸ್ಟ್)",
+      "name_hi": "Finger Millet Blast (Leaf & Neck Blast)",
+      "severity": "Severe",
+      "image": "/diseases/ragi_1.jpg",
+      "symptoms": "Spindle-shaped spots on leaves. The most destructive phase is neck blast where the stem below the earhead turns black, causing the earhead to break or produce chaffy, empty grains..",
+      "treatment_chemical": "Spray Kitazin 48 EC @ 2 ml/L or Tricyclazole 75 WP @ 0.6 g/L or Saaf (Carbendazim + Mancozeb) @ 2 g/L at earhead emergence..",
+      "treatment_organic": "Treat seeds with Pseudomonas fluorescens @ 10 g/kg seed."
+    },
+    {
+      "name": "Foot Rot & Seedling Blight",
+      "name_kn": "ಬುಡ ಕೊಳೆ ಮತ್ತು ಸಸಿ ರೋಗ",
+      "name_hi": "Foot Rot & Seedling Blight",
+      "severity": "Moderate",
+      "image": "/diseases/ragi_2.jpg",
+      "symptoms": "Brown discoloration of collar region of young seedlings, followed by wilting and drying up.",
+      "treatment_chemical": "Drench soil with Captan 50 WP @ 3 g/L or Carbendazim 50 WP @ 1 g/L around affected patches..",
+      "treatment_organic": "Apply Trichoderma viride enriched FYM (2 kg Trichoderma in 100 kg compost) to the furrow at sowing.."
+    }
+  ],
+  "Maize": [
+    {
+      "name": "Turcicum Leaf Blight (TLB)",
+      "name_kn": "ಮೆಕ್ಕೆಜೋಳದ ಎಲೆ ಸುಡು ರೋಗ",
+      "name_hi": "Turcicum Leaf Blight (TLB)",
+      "severity": "Severe",
+      "image": "/diseases/maize_1.jpg",
+      "symptoms": "Long, elliptical, grayish-green or tan lesions (up to 15 cm long) appear on leaves starting from bottom leaves and moving upwards, giving a burnt appearance..",
+      "treatment_chemical": "Spray Mancozeb 75 WP @ 2.5 g/L or Azoxystrobin 18.2% + Difenoconazole 11.4% SC @ 1 ml/L at first appearance of spots..",
+      "treatment_organic": "Foliar spray of 5% Neem oil or Trichoderma harzianum @ 5 g/L at knee-high stage.."
+    },
+    {
+      "name": "Fall Armyworm (FAW) Infestation",
+      "name_kn": "ಲದ್ದಿ ಹುಳು ಬಾಧೆ (ಫಾಲ್ ಆರ್ಮಿವರ್ಮ್)",
+      "name_hi": "Fall Armyworm (FAW) Infestation",
+      "severity": "Severe",
+      "image": "/diseases/maize_2.jpg",
+      "symptoms": "Extensive pin-hole damage on young leaves, window paning, followed by heavy feeding inside the central whorl with prominent sawdust-like moist fecal pellets..",
+      "treatment_chemical": "Spray Chlorantraniliprole 18.5 SC @ 0.4 ml/L or Emamectin Benzoate 5 SG @ 0.4 g/L directed into the central leaf whorl..",
+      "treatment_organic": "Apply sand + wood ash mixture (9:1) or Metarhizium rileyi / Beauveria bassiana @ 5 g/L into whorls."
+    }
+  ],
+  "Sugarcane": [
+    {
+      "name": "Red Rot Disease",
+      "name_kn": "ಕಬ್ಬಿನ ಕೆಂಪು ಕೊಳೆ ರೋಗ",
+      "name_hi": "Red Rot Disease",
+      "severity": "Severe",
+      "image": "/diseases/sugarcane_1.jpg",
+      "symptoms": "Yellowing and drying of crown leaves. Canes split open longitudinally show red pith tissue with characteristic transverse white patches and an alcoholic sour smell..",
+      "treatment_chemical": "Drench field with Carbendazim 50 WP @ 1 g/L.",
+      "treatment_organic": "Sett dip treatment in Trichoderma viride culture suspension (10 g/L water) for 15 minutes before planting.."
+    },
+    {
+      "name": "Smut Disease (Chabuk)",
+      "name_kn": "ಕಬ್ಬಿನ ಕಾಡಿಗೆ ರೋಗ",
+      "name_hi": "Smut Disease (Chabuk)",
+      "severity": "Moderate",
+      "image": "/diseases/sugarcane_2.jpg",
+      "symptoms": "Production of a prominent whip-like, curved, pencil-thick black structure from the central shoot spindle covered by a silver membrane releasing millions of sooty spores..",
+      "treatment_chemical": "Dip setts in Carbendazim 50 WP (1 g/L) or Triadimefon (1 g/L) solution for 15 minutes prior to furrow planting..",
+      "treatment_organic": "Hot water sett treatment at 50°C for 2 hours with bio-inoculants.."
+    }
+  ],
+  "Cotton": [
+    {
+      "name": "Bacterial Blight / Angular Leaf Spot",
+      "name_kn": "ಹತ್ತಿಯ ಕಪ್ಪು ತೋಳು / ದುಂಡಾಣು ರೋಗ",
+      "name_hi": "Bacterial Blight / Angular Leaf Spot",
+      "severity": "Severe",
+      "image": "/diseases/cotton_1.jpg",
+      "symptoms": "Angular water-soaked spots bounded by veins on leaves turning dark brown/black.",
+      "treatment_chemical": "Spray Copper Oxychloride 50 WP @ 2.5 g/L + Streptocycline @ 0.1 g/L (1 g in 10 L water).",
+      "treatment_organic": "Spray 5% Neem Seed Kernel Extract (NSKE) + Pseudomonas fluorescens @ 5 g/L.."
+    },
+    {
+      "name": "Leaf Reddening & Magnesium Deficiency",
+      "name_kn": "ಹತ್ತಿ ಎಲೆ ಕೆಂಪಾಗುವ ರೋಗ",
+      "name_hi": "Leaf Reddening & Magnesium Deficiency",
+      "severity": "Moderate",
+      "image": "/diseases/cotton_2.jpg",
+      "symptoms": "Interveinal areas of mature leaves turn purplish-red while veins stay green.",
+      "treatment_chemical": "Foliar spray of Magnesium Sulphate (MgSO4) @ 10 g/L (1%) + Urea @ 10 g/L (1%) during peak flowering and boll formation..",
+      "treatment_organic": "Apply 25 kg Magnesium Sulphate/acre as soil application along with FYM during earthing up.."
+    }
+  ],
+  "Tomato": [
+    {
+      "name": "Early Blight & Target Spot",
+      "name_kn": "ಟೊಮೆಟೊ ಮುಂಚಿನ ಅಂಗಮಾರಿ ರೋಗ",
+      "name_hi": "Early Blight & Target Spot",
+      "severity": "Severe",
+      "image": "/diseases/tomato_1.jpg",
+      "symptoms": "Dark brown to black necrotic spots with characteristic concentric rings (target board effect) surrounded by yellow chlorotic halos, causing defoliation..",
+      "treatment_chemical": "Spray Mancozeb 75 WP @ 2.5 g/L or Azoxystrobin 23 SC @ 1 ml/L or Chlorothalonil 75 WP @ 2 g/L..",
+      "treatment_organic": "Spray Neem oil 3 ml/L + soap solution or Trichoderma viride @ 5 g/L."
+    },
+    {
+      "name": "Tomato Leaf Curl Virus (ToLCV)",
+      "name_kn": "ಟೊಮೆಟೊ ಎಲೆ ಮುರುಟು ರೋಗ",
+      "name_hi": "Tomato Leaf Curl Virus (ToLCV)",
+      "severity": "Severe",
+      "image": "/diseases/tomato_2.jpg",
+      "symptoms": "Upward and downward curling, puckering, and crinkling of leaves with thickened veins.",
+      "treatment_chemical": "Vector control: Spray Imidacloprid 17.8 SL @ 0.3 ml/L or Diafenthiuron 50 WP @ 1.2 g/L or Acetamiprid 20 SP @ 0.3 g/L..",
+      "treatment_organic": "Install yellow sticky traps (15-20 traps/acre)."
+    }
+  ],
+  "Chilli": [
+    {
+      "name": "Anthracnose / Fruit Rot / Die-Back",
+      "name_kn": "ಮೆಣಸಿನಕಾಯಿ ಕಾಯಿ ಕೊಳೆ & ಕೊಂಬೆ ಒಣಗು ರೋಗ",
+      "name_hi": "Anthracnose / Fruit Rot / Die-Back",
+      "severity": "Severe",
+      "image": "/diseases/chilli_1.jpg",
+      "symptoms": "Circular sunken lesions on ripe red fruits with black concentric rings of fungal fruiting bodies.",
+      "treatment_chemical": "Spray Azoxystrobin 23 SC @ 1 ml/L or Difenoconazole 25 EC @ 0.5 ml/L or Mancozeb 75 WP @ 2.5 g/L at fruit setting..",
+      "treatment_organic": "Spray Pseudomonas fluorescens @ 5 g/L."
+    },
+    {
+      "name": "Chilli Murda Complex (Leaf Curl / Thrips & Mites)",
+      "name_kn": "ಮೆಣಸಿನಕಾಯಿ ಮುರಡ ರೋಗ (ಜಿಗಿ ಮತ್ತು ನುಸಿ)",
+      "name_hi": "Chilli Murda Complex (Leaf Curl / Thrips & Mites)",
+      "severity": "Severe",
+      "image": "/diseases/chilli_2.jpg",
+      "symptoms": "Leaves curl upward into a boat-shape with bronze underside (thrips) or curl downward inverted-cup shape with brittle foliage (mites)..",
+      "treatment_chemical": "For thrips: Fipronil 5 SC @ 1.5 ml/L.",
+      "treatment_organic": "Spray 5% NSKE or Pongamia / Neem oil (5 ml/L)."
+    }
+  ],
+  "Banana": [
+    {
+      "name": "Sigatoka Leaf Spot (Yellow & Black)",
+      "name_kn": "ಬಾಳೆ ಎಲೆ ಚುಕ್ಕೆ ರೋಗ (ಸಿಗಾಟೋಕಾ)",
+      "name_hi": "Sigatoka Leaf Spot (Yellow & Black)",
+      "severity": "Severe",
+      "image": "/diseases/banana_1.jpg",
+      "symptoms": "Small yellowish spots parallel to veins on older leaves that enlarge into spindle-shaped brown patches with grey centers and yellow halos, leading to leaf scorching..",
+      "treatment_chemical": "Spray Propiconazole 25 EC @ 1 ml/L or Carbendazim 50 WP @ 1 g/L with mineral oil (10 ml/L) or Azoxystrobin @ 1 ml/L..",
+      "treatment_organic": "Foliar spray of 1% Bordeaux mixture or Pseudomonas fluorescens @ 5 g/L with surfactant.."
+    },
+    {
+      "name": "Panama Wilt (Fusarium Wilt)",
+      "name_kn": "ಬಾಳೆ ಪನಾಮಾ ಸೊರಗು ರೋಗ",
+      "name_hi": "Panama Wilt (Fusarium Wilt)",
+      "severity": "Severe",
+      "image": "/diseases/banana_2.jpg",
+      "symptoms": "Yellowing of lower leaf margins progressing inward, followed by petiole collapse forming a skirt of dead hanging leaves.",
+      "treatment_chemical": "Drench soil around plants with Carbendazim 50 WP (2 g/L).",
+      "treatment_organic": "Apply 500g Neem cake + 25g Trichoderma viride per pit during planting."
+    }
+  ],
+  "Arecanut": [
+    {
+      "name": "Koleroga / Fruit Rot (Mahali)",
+      "name_kn": "ಅಡಿಕೆ ಕೊಳೆ ರೋಗ (ಕೊಳೆರೋಗ / ಮಹಾಲಿ)",
+      "name_hi": "Koleroga / Fruit Rot (Mahali)",
+      "severity": "Severe",
+      "image": "/diseases/arecanut_1.jpg",
+      "symptoms": "Water-soaked dark lesions on tender green nuts during South-West Monsoon.",
+      "treatment_chemical": "Spray 1% Bordeaux Mixture or Metalaxyl 8% + Mancozeb 64% WP @ 2.5 g/L prophylactically before onset of monsoon rains..",
+      "treatment_organic": "Tie polythene covers over arecanut bunches before monsoon onset to prevent rain splash infection.."
+    },
+    {
+      "name": "Yellow Leaf Disease (YLD)",
+      "name_kn": "ಅಡಿಕೆ ಹಳದಿ ಎಲೆ ರೋಗ",
+      "name_hi": "Yellow Leaf Disease (YLD)",
+      "severity": "Moderate",
+      "image": "/diseases/arecanut_2.jpg",
+      "symptoms": "Bright yellowing of inner whorl leaves spreading to crown, root necrosis, reduced nut size with blackened, spongy kernels..",
+      "treatment_chemical": "Vector control: Spray Imidacloprid 17.8 SL @ 0.3 ml/L or Dimethoate @ 1.5 ml/L.",
+      "treatment_organic": "Apply 10 kg compost + 2 kg neem cake + bio-fertilizers per palm annually.."
+    }
+  ],
+  "Groundnut": [
+    {
+      "name": "Tikka Leaf Spot (Early & Late Blight)",
+      "name_kn": "ಕಡಲೆಕಾಯಿ ಟಿಕ್ಕಾ ಎಲೆ ಚುಕ್ಕೆ ರೋಗ",
+      "name_hi": "Tikka Leaf Spot (Early & Late Blight)",
+      "severity": "Severe",
+      "image": "/diseases/groundnut_1.jpg",
+      "symptoms": "Circular reddish-brown to dark spots on leaves with distinct yellow halos (Early Tikka) or circular black spots on underside of leaves without halos (Late Tikka)..",
+      "treatment_chemical": "Spray Mancozeb 75 WP @ 2 g/L or Hexaconazole 5 EC @ 2 ml/L or Tebuconazole 25.9 EC @ 1 ml/L at 40 and 60 days after sowing..",
+      "treatment_organic": "Spray 5% Neem Seed Kernel Extract (NSKE) or Pseudomonas fluorescens @ 5 g/L.."
+    },
+    {
+      "name": "Collar Rot / Crown Rot",
+      "name_kn": "ಕಾಲರ್ ಕೊಳೆತ ರೋಗ",
+      "name_hi": "कॉलर सड़न रोग",
+      "severity": "Severe",
+      "image": "/diseases/groundnut_2.jpg",
+      "symptoms": "Black sooty fungal spores at the collar region near soil line.",
+      "treatment_chemical": "Seed treatment with Thiram 3 g/kg or Carbendazim 2 g/kg.",
+      "treatment_organic": "Seed treatment with Trichoderma viride @ 10 g/kg seed + soil application of 2.5 kg Trichoderma enriched in 500 kg FYM.."
+    }
+  ],
+  "Onion": [
+    {
+      "name": "Purple Blotch of Onion",
+      "name_kn": "ಈರುಳ್ಳಿಯ ನೇರಳೆ ಮಚ್ಚೆ ರೋಗ",
+      "name_hi": "Purple Blotch of Onion",
+      "severity": "Severe",
+      "image": "/diseases/onion_1.jpg",
+      "symptoms": "Small, sunken, water-soaked lesions that develop a purple-to-dark brown center with concentric rings.",
+      "treatment_chemical": "Spray Mancozeb 75 WP @ 2.5 g/L or Difenoconazole 25 EC @ 1 ml/L or Propiconazole @ 1 ml/L mixed with Sandovit sticker (0.5 ml/L)..",
+      "treatment_organic": "Foliar spray of 5% Neem Seed Kernel Extract (NSKE) or Trichoderma harzianum @ 5 g/L."
+    },
+    {
+      "name": "Basal Rot / Bulb Rot",
+      "name_kn": "ಈರುಳ್ಳಿಯ ಗಡ್ಡೆ ಕೊಳೆ ರೋಗ",
+      "name_hi": "Basal Rot / Bulb Rot",
+      "severity": "Moderate",
+      "image": "/diseases/onion_2.jpg",
+      "symptoms": "Yellowing and dying back of leaves from tips downwards.",
+      "treatment_chemical": "Soil drenching with Copper Oxychloride 50 WP @ 3 g/L or Carbendazim 50 WP @ 1 g/L around affected plant base..",
+      "treatment_organic": "Soil application of Trichoderma viride enriched Farm Yard Manure (FYM) @ 5 kg/acre mixed in 2 tonnes compost.."
+    }
+  ],
+  "Pomegranate": [
+    {
+      "name": "Bacterial Blight / Telya (Black Spot)",
+      "name_kn": "ದಾಳಿಂಬೆ ತೇಲ್ಯ ರೋಗ (ದುಂಡಾಣು ಅಂಗಮಾರಿ)",
+      "name_hi": "Bacterial Blight / Telya (Black Spot)",
+      "severity": "Severe",
+      "image": "/diseases/pomegranate_1.jpg",
+      "symptoms": "Dark brown to black water-soaked angular spots on leaves.",
+      "treatment_chemical": "Spray Streptocycline @ 0.5 g/L + Copper Oxychloride @ 2.5 g/L or Bordeaux Mixture (1%).",
+      "treatment_organic": "Spray Bio-bactericide (Pseudomonas fluorescens) @ 5 g/L."
+    },
+    {
+      "name": "Cercospora Fruit & Leaf Spot",
+      "name_kn": "ದಾಳಿಂಬೆ ಹಣ್ಣಿನ ಕಪ್ಪು ಚುಕ್ಕೆ ರೋಗ",
+      "name_hi": "Cercospora Fruit & Leaf Spot",
+      "severity": "Moderate",
+      "image": "/diseases/pomegranate_2.jpg",
+      "symptoms": "Minute blackish circular spots on leaves and fruit rinds that coalesce into large necrotic patches, rendering fruit unmarketable..",
+      "treatment_chemical": "Spray Difenoconazole 25 EC @ 1 ml/L or Chlorothalonil 75 WP @ 2 g/L or Azoxystrobin @ 1 ml/L..",
+      "treatment_organic": "Foliar application of Neem oil @ 5 ml/L + potassium soap."
+    }
+  ],
+  "Grapes": [
+    {
+      "name": "Downy Mildew of Grapes",
+      "name_kn": "ದ್ರಾಕ್ಷಿಯ ಬೂದಿ ರೋಗ (ಡೌನಿ ಮಿಲ್ಡ್ಯೂ)",
+      "name_hi": "Downy Mildew of Grapes",
+      "severity": "Severe",
+      "image": "/diseases/grapes_1.jpg",
+      "symptoms": "Yellowish translucent oily spots (oilspots) on upper leaf surface.",
+      "treatment_chemical": "Spray Metalaxyl 8% + Mancozeb 64% WP @ 2.5 g/L or Dimethomorph 50 WP @ 1 g/L or Cymoxanil + Mancozeb @ 2 g/L..",
+      "treatment_organic": "Foliar spray of Trichoderma harzianum @ 5 g/L or Potassium Phosphite (3 g/L) to induce systemic acquired resistance.."
+    },
+    {
+      "name": "Powdery Mildew of Grapes",
+      "name_kn": "ದ್ರಾಕ್ಷಿಯ ಬೂದು ರೋಗ (ಪೌಡರಿ ಮಿಲ್ಡ್ಯೂ)",
+      "name_hi": "Powdery Mildew of Grapes",
+      "severity": "Severe",
+      "image": "/diseases/grapes_2.jpg",
+      "symptoms": "White powdery powdery patches covering leaves, green shoots, and berries.",
+      "treatment_chemical": "Spray Wettable Sulphur 80 WP @ 2.5 g/L or Penconazole 10 EC @ 0.5 ml/L or Myclobutanil @ 0.4 g/L..",
+      "treatment_organic": "Spray 10% unpasteurized cow milk solution in water or Neem oil 3 ml/L + baking soda (sodium bicarbonate 2 g/L).."
+    }
+  ],
+  "Coffee": [
+    {
+      "name": "Coffee Leaf Rust (CLR)",
+      "name_kn": "ಕಾಫಿ ಎಲೆ ತುಕ್ಕು ರೋಗ",
+      "name_hi": "Coffee Leaf Rust (CLR)",
+      "severity": "Severe",
+      "image": "/diseases/coffee_1.jpg",
+      "symptoms": "Characteristic orange-yellow powdery pustules on the lower surface of leaves.",
+      "treatment_chemical": "Spray Bordeaux Mixture (0.5%) before pre-monsoon (May) and post-monsoon (October).",
+      "treatment_organic": "Foliar spray of Beauveria bassiana or Verticillium hemileiae biocontrol formulations."
+    },
+    {
+      "name": "Black Rot / Koleroga of Coffee",
+      "name_kn": "ಕಾಫಿ ಕೊಳೆ ರೋಗ (ಕೊಳೆರೋಗ)",
+      "name_hi": "Black Rot / Koleroga of Coffee",
+      "severity": "Moderate",
+      "image": "/diseases/coffee_2.jpg",
+      "symptoms": "Blackening and rotting of leaves and developing green berries.",
+      "treatment_chemical": "Spray 1% Bordeaux Mixture just before onset of southwest monsoon.",
+      "treatment_organic": "Spray Pseudomonas fluorescens @ 5 g/L."
+    }
+  ],
+  "Coconut": [
+    {
+      "name": "Bud Rot of Coconut",
+      "name_kn": "ತೆಂಗಿನ ಸುಳಿ ಕೊಳೆ ರೋಗ",
+      "name_hi": "Bud Rot of Coconut",
+      "severity": "Severe",
+      "image": "/diseases/coconut_1.jpg",
+      "symptoms": "Central shoot or spindle leaf withers, turns yellowish-brown and rots completely.",
+      "treatment_chemical": "Remove all rotting tissues from crown and apply Bordeaux Paste (10%) or Metalaxyl-Mancozeb sachet (3g) placed in crown.",
+      "treatment_organic": "Place perforated polythene sachet containing 5g Trichoderma harzianum talc formulation in leaf axils adjacent to central spindle.."
+    },
+    {
+      "name": "Stem Bleeding Disease",
+      "name_kn": "ತೆಂಗಿನ ಕಾಂಡದ ರಕ್ತಸ್ರಾವ ರೋಗ",
+      "name_hi": "Stem Bleeding Disease",
+      "severity": "Moderate",
+      "image": "/diseases/coconut_2.jpg",
+      "symptoms": "Exudation of dark reddish-brown gummy liquid from cracks in stem trunk 2-3 meters from ground level.",
+      "treatment_chemical": "Chisel out infected bark with chisel.",
+      "treatment_organic": "Root feeding with 5% Neem oil formulation or apply 5 kg Neem cake per palm annually.."
+    }
+  ],
+  "Red gram (Tur)": [
+    {
+      "name": "Fusarium Wilt of Pigeon Pea",
+      "name_kn": "ತೊಗರಿ ಸೊರಗು ರೋಗ (ಫ್ಯುಸಾರಿಯಂ ವಿಲ್ಟ್)",
+      "name_hi": "Fusarium Wilt of Pigeon Pea",
+      "severity": "Severe",
+      "image": "/diseases/red_gram_tur_1.jpg",
+      "symptoms": "Gradual drooping and wilting of plants, starting on one side of plant.",
+      "treatment_chemical": "Seed treatment with Carbendazim 2g/kg seed.",
+      "treatment_organic": "Seed treatment with Trichoderma viride @ 5g/kg + Pseudomonas fluorescens @ 5g/kg."
+    },
+    {
+      "name": "Sterility Mosaic Disease (SMD)",
+      "name_kn": "ತೊಗರಿ ಬಂಜೆ ರೋಗ",
+      "name_hi": "Sterility Mosaic Disease (SMD)",
+      "severity": "Severe",
+      "image": "/diseases/red_gram_tur_2.jpg",
+      "symptoms": "Bushy, stunted vegetative growth with light green/yellow mosaic mottling on leaves.",
+      "treatment_chemical": "Spray Fenazaquin 10 EC @ 1 ml/L or Propargite 57 EC @ 2 ml/L or Wettable Sulphur @ 3 g/L to control the vector mite..",
+      "treatment_organic": "Spray Neem oil 5 ml/L mixed with soap nut solution at 30 and 45 days after sowing.."
+    }
+  ],
+  "Jowar": [
+    {
+      "name": "Grain Mold / Head Mold",
+      "name_kn": "ಕಾಳು ಬೂಜು ರೋಗ (ಗ್ರೇನ್ ಮೋಲ್ಡ್)",
+      "name_hi": "ज्वार का दाना फफूंद रोग",
+      "severity": "Severe",
+      "image": "/diseases/jowar_1.jpg",
+      "symptoms": "Pink, black, or chalky white fungal growth over developing grains during rainy harvest periods.",
+      "treatment_chemical": "Spray Propiconazole 25% EC (Tilt) @ 1 ml/L or Mancozeb 75% WP @ 2.5 g/L at 50% flowering stage..",
+      "treatment_organic": "Spray Pseudomonas fluorescens (1%) or 5% Neem Seed Kernel Extract (NSKE) at panicle emergence.."
+    },
+    {
+      "name": "Anthracnose and Leaf Blight",
+      "name_kn": "ಆಂಥ್ರಾಕ್ನೋಸ್ ಮತ್ತು ಎಲೆ ಒಣಗು ರೋಗ",
+      "name_hi": "ज्वार का एंथ्रेक्नोज व अंगमारी रोग",
+      "severity": "Moderate",
+      "image": "/diseases/jowar_2.jpg",
+      "symptoms": "Small circular reddish-purple spots on leaves that elongate into large dead blights.",
+      "treatment_chemical": "Foliar spray with Carbendazim 50% WP @ 1 g/L or Azoxystrobin @ 1 ml/L..",
+      "treatment_organic": "Foliar spray of Trichoderma harzianum @ 5 g/L with 2% cow urine extract.."
+    }
+  ],
+  "Bajra": [
+    {
+      "name": "Downy Mildew / Green Ear Disease",
+      "name_kn": "ಹಸಿರು ತೆನೆ ರೋಗ / ಬೆಳ್ಳಿ ಎಲೆ ರೋಗ",
+      "name_hi": "बाजरे का हरित बाली व तुलासिता रोग",
+      "severity": "Severe",
+      "image": "/diseases/bajra_1.jpg",
+      "symptoms": "Floral parts of the ear head transform into leafy structures resembling a green brush.",
+      "treatment_chemical": "Foliar spray with Metalaxyl + Mancozeb (Ridomil MZ 72 WP) @ 2 g/L at 21 days after sowing..",
+      "treatment_organic": "Seed treatment with Pseudomonas fluorescens @ 10 g/kg followed by foliar spray at 30 days.."
+    },
+    {
+      "name": "Ergot of Bajra",
+      "name_kn": "ಜೇನು ಅಂಟು ರೋಗ (ಅರ್ಗಾಟ್)",
+      "name_hi": "बाजरे का अरगट / गोंदिया रोग",
+      "severity": "Severe",
+      "image": "/diseases/bajra_2.jpg",
+      "symptoms": "Pinkish honey-like viscous fluid oozes from infected spikelets, later drying into dark hard sclerotial horns..",
+      "treatment_chemical": "Foliar spray of Mancozeb @ 2 g/L or Ziram @ 2 g/L at boot-leaf and 50% flowering stage..",
+      "treatment_organic": "Dip seeds in 10% common salt solution to float off and discard sclerotia prior to sowing.."
+    }
+  ],
+  "Wheat": [
+    {
+      "name": "Brown / Leaf Rust",
+      "name_kn": "ಕಂದು ತುಕ್ಕು ರೋಗ",
+      "name_hi": "गेहूँ का भूरा रतुआ (रस्ट) रोग",
+      "severity": "Severe",
+      "image": "/diseases/wheat_1.jpg",
+      "symptoms": "Bright orange-brown pustules scattered randomly on the upper leaf surface.",
+      "treatment_chemical": "Spray Propiconazole 25% EC (Tilt) @ 1 ml/L or Tebuconazole @ 1 ml/L at the first appearance of pustules..",
+      "treatment_organic": "Foliar spray with sour buttermilk (5%) or Neem oil (3 ml/L) with emulsifier.."
+    },
+    {
+      "name": "Spot Blotch / Leaf Blight",
+      "name_kn": "ಎಲೆ ಅಂಗಮಾರಿ ರೋಗ",
+      "name_hi": "गेहूँ का स्पॉट ब्लॉच / अंगमारी",
+      "severity": "Moderate",
+      "image": "/diseases/wheat_2.jpg",
+      "symptoms": "Small elongated brown lesions on lower leaves expanding with yellow chlorotic margins into irregular blights..",
+      "treatment_chemical": "Spray Mancozeb 75 WP @ 2.5 g/L or Azoxystrobin @ 1 ml/L during tillering and heading..",
+      "treatment_organic": "Seed treatment with Trichoderma viride @ 4 g/kg + foliar spray of Pseudomonas @ 5 g/L.."
+    }
+  ],
+  "Foxtail millet (Navane)": [
+    {
+      "name": "Blast Disease (Navane Blast)",
+      "name_kn": "ನವಣೆ ಬೆಂಕಿ ರೋಗ (ಬ್ಲಾಸ್ಟ್)",
+      "name_hi": "कंगनी का झुलसा / ब्लास्ट रोग",
+      "severity": "Severe",
+      "image": "/diseases/foxtail_millet_navane_1.jpg",
+      "symptoms": "Diamond or spindle-shaped lesions with ash-grey centers and brown borders on leaves and necks of panicles..",
+      "treatment_chemical": "Spray Tricyclazole 75% WP (Baan) @ 0.6 g/L or Isoprothiolane @ 1.5 ml/L..",
+      "treatment_organic": "Foliar spray of 10% cow urine extract + 5% Neem leaf extract.."
+    },
+    {
+      "name": "Head Smut of Foxtail Millet",
+      "name_kn": "ನವಣೆ ಕಾಡಿಗೆ ರೋಗ",
+      "name_hi": "कंगनी का कंडुआ (स्मट) रोग",
+      "severity": "Moderate",
+      "image": "/diseases/foxtail_millet_navane_2.jpg",
+      "symptoms": "Individual grains in the spikelet are replaced by black powdery masses of smut spores covered by a delicate membrane..",
+      "treatment_chemical": "Seed treatment with Carboxin 37.5% + Thiram 37.5% (Vitavax Power) @ 2 g/kg seed..",
+      "treatment_organic": "Hot water seed treatment at 54°C for 10 minutes prior to sowing.."
+    }
+  ],
+  "Bengal gram": [
+    {
+      "name": "Fusarium Wilt of Chickpea",
+      "name_kn": "ಕಡಲೆ ನೆಟೆ ರೋಗ / ಸೊರಗು ರೋಗ",
+      "name_hi": "चने का उकठा (विल्ट) रोग",
+      "severity": "Severe",
+      "image": "/diseases/bengal_gram_1.jpg",
+      "symptoms": "Drooping of petioles, yellowing and drying of foliage starting from lower leaves.",
+      "treatment_chemical": "Seed treatment with Carbendazim + Mancozeb (Saaf) @ 2 g/kg.",
+      "treatment_organic": "Seed treatment with Trichoderma viride @ 10 g/kg + soil incorporation of 2.5 kg Trichoderma mixed in 250 kg FYM/acre.."
+    },
+    {
+      "name": "Ascochyta Blight",
+      "name_kn": "ಕಡಲೆ ಆಸ್ಕೋಕೈಟಾ ಎಲೆ ಅಂಗಮಾರಿ ರೋಗ",
+      "name_hi": "चने का एस्कोकाइटा अंगमारी रोग",
+      "severity": "Moderate",
+      "image": "/diseases/bengal_gram_2.jpg",
+      "symptoms": "Circular brown spots on leaflets and pods with concentric rings of dark pycnidia.",
+      "treatment_chemical": "Foliar spray with Chlorothalonil 75% WP @ 2 g/L or Azoxystrobin @ 1 ml/L..",
+      "treatment_organic": "Foliar spray of 5% Neem Seed Kernel Extract (NSKE) at early symptom appearance.."
+    }
+  ],
+  "Green gram": [
+    {
+      "name": "Mungbean Yellow Mosaic Virus (MYMV)",
+      "name_kn": "ಹೆಸರು ಹಳದಿ ನಂಜು ರೋಗ (ಮೊಸಾಯಿಕ್)",
+      "name_hi": "मूंग का पीला मोज़ेक वायरस रोग",
+      "severity": "Severe",
+      "image": "/diseases/green_gram_1.jpg",
+      "symptoms": "Irregular bright yellow and green patches on young leaves.",
+      "treatment_chemical": "Control whitefly vector by spraying Thiamethoxam 25% WG @ 0.25 g/L or Dimethoate 30% EC @ 1.7 ml/L..",
+      "treatment_organic": "Install yellow sticky traps (15-20 traps/acre)."
+    },
+    {
+      "name": "Cercospora Leaf Spot",
+      "name_kn": "ಸರ್ಕೋಸ್ಪೊರಾ ಎಲೆ ಚುಕ್ಕೆ ರೋಗ",
+      "name_hi": "मूंग का सर्कोस्पोरा पत्ती धब्बा",
+      "severity": "Moderate",
+      "image": "/diseases/green_gram_2.jpg",
+      "symptoms": "Circular to angular brown spots with grayish centers on leaves.",
+      "treatment_chemical": "Foliar spray of Carbendazim 50% WP @ 1 g/L or Mancozeb @ 2 g/L at first appearance of spots..",
+      "treatment_organic": "Foliar spray with Pseudomonas fluorescens @ 5 g/L.."
+    }
+  ],
+  "Black gram": [
+    {
+      "name": "Yellow Mosaic Disease (YMV)",
+      "name_kn": "ಉದ್ದು ಹಳದಿ ನಂಜು ರೋಗ",
+      "name_hi": "उड़द का पीला मोज़ेक रोग",
+      "severity": "Severe",
+      "image": "/diseases/black_gram_1.jpg",
+      "symptoms": "Scattered yellow specks coalescing into large bright golden patches on foliage.",
+      "treatment_chemical": "Seed treatment with Imidacloprid 600 FS @ 5 ml/kg.",
+      "treatment_organic": "Erect 20 yellow sticky traps per acre."
+    },
+    {
+      "name": "Powdery Mildew of Black Gram",
+      "name_kn": "ಉದ್ದು ಬೂದಿ ರೋಗ",
+      "name_hi": "उड़द का चूर्णिल आसिता (पाउडरी मिल्ड्यू)",
+      "severity": "Moderate",
+      "image": "/diseases/black_gram_2.jpg",
+      "symptoms": "White flour-like powdery patches on upper leaf surface, stems and pods.",
+      "treatment_chemical": "Spray Wettable Sulphur 80% WP @ 3 g/L or Hexaconazole 5% EC @ 1 ml/L..",
+      "treatment_organic": "Foliar spray with cow urine (10%) or wettable sulfur bio-formulations.."
+    }
+  ],
+  "Horse gram": [
+    {
+      "name": "Dry Root Rot / Charcoal Rot",
+      "name_kn": "ಹುರುಳಿ ಒಣ ಬೇರು ಕೊಳೆತ ರೋಗ",
+      "name_hi": "कुलथी का सूखा जड़ सड़न रोग",
+      "severity": "Severe",
+      "image": "/diseases/horse_gram_1.jpg",
+      "symptoms": "Sudden wilting of plants in patches during moisture stress.",
+      "treatment_chemical": "Seed treatment with Carbendazim 2 g/kg + Thiram 2 g/kg.",
+      "treatment_organic": "Seed treatment with Trichoderma viride @ 10 g/kg + application of Farm Yard Manure enriched with Trichoderma.."
+    },
+    {
+      "name": "Anthracnose of Horse Gram",
+      "name_kn": "ಹುರುಳಿ ಆಂಥ್ರಾಕ್ನೋಸ್ ರೋಗ",
+      "name_hi": "कुलथी का एंथ्रेक्नोज रोग",
+      "severity": "Moderate",
+      "image": "/diseases/horse_gram_2.jpg",
+      "symptoms": "Depressed circular brown spots with red borders on leaves and pods.",
+      "treatment_chemical": "Spray Mancozeb 75 WP @ 2 g/L or Carbendazim @ 1 g/L..",
+      "treatment_organic": "Foliar spray of 5% Neem Seed Kernel Extract (NSKE).."
+    }
+  ],
+  "Cowpea": [
+    {
+      "name": "Aphid-borne Cowpea Mosaic Virus",
+      "name_kn": "ಅಲಸಂದೆ ನಂಜು ರೋಗ (ಮೊಸಾಯಿಕ್)",
+      "name_hi": "लोबिया का मोज़ेक वायरस रोग",
+      "severity": "Severe",
+      "image": "/diseases/cowpea_1.jpg",
+      "symptoms": "Severe leaf puckering, dark green blistering and downward curling of margins with chlorotic mottle..",
+      "treatment_chemical": "Spray Imidacloprid 17.8% SL @ 0.3 ml/L or Thiamethoxam @ 0.3 g/L to control aphid vector..",
+      "treatment_organic": "Spray Neem oil (3 ml/L) mixed with soft soap solution."
+    },
+    {
+      "name": "Cercospora Leaf Spot of Cowpea",
+      "name_kn": "ಅಲಸಂದೆ ಎಲೆ ಚುಕ್ಕೆ ರೋಗ",
+      "name_hi": "लोबिया का पत्ती धब्बा रोग",
+      "severity": "Moderate",
+      "image": "/diseases/cowpea_2.jpg",
+      "symptoms": "Large red-brown angular to circular spots on foliage causing extensive blight and premature leaf drop..",
+      "treatment_chemical": "Foliar spray of Carbendazim 12% + Mancozeb 63% WP @ 2 g/L..",
+      "treatment_organic": "Spray Pseudomonas fluorescens @ 5 g/L with sticker.."
+    }
+  ],
+  "Field bean (Avare)": [
+    {
+      "name": "Avare Anthracnose and Pod Blight",
+      "name_kn": "ಅವರೆ ಕಾಯಿ ಕೊಳೆತ ಮತ್ತು ಚುಕ್ಕೆ ರೋಗ",
+      "name_hi": "सेम (अवारे) का एंथ्रेक्नोज व फली सड़न",
+      "severity": "Severe",
+      "image": "/diseases/field_bean_avare_1.jpg",
+      "symptoms": "Dark sunken water-soaked circular lesions on green pods filled with pink spore droplets.",
+      "treatment_chemical": "Spray Carbendazim @ 1 g/L or Difenoconazole 25% EC @ 0.5 ml/L at flower initiation and pod set..",
+      "treatment_organic": "Foliar spray of 1% Bordeaux mixture or 5% NSKE.."
+    },
+    {
+      "name": "Rust of Field Bean",
+      "name_kn": "ಅವರೆ ತುಕ್ಕು ರೋಗ",
+      "name_hi": "सेम का रतुआ (रस्ट) रोग",
+      "severity": "Moderate",
+      "image": "/diseases/field_bean_avare_2.jpg",
+      "symptoms": "Small brownish-red powdery pustules on underside of leaves surrounded by a yellow halo..",
+      "treatment_chemical": "Spray Wettable Sulphur @ 3 g/L or Propiconazole @ 1 ml/L..",
+      "treatment_organic": "Foliar spray of sour buttermilk (5%) + Neem oil (3 ml/L).."
+    }
+  ],
+  "Sunflower": [
+    {
+      "name": "Alternaria Leaf Blight",
+      "name_kn": "ಸೂರ್ಯಕಾಂತಿ ಆಲ್ಟರ್ನೇರಿಯಾ ಎಲೆ ಕರಕಲು ರೋಗ",
+      "name_hi": "सूरजमुखी का अल्टरनेरिया पत्ती झुलसा",
+      "severity": "Severe",
+      "image": "/diseases/sunflower_1.jpg",
+      "symptoms": "Dark brown circular spots with concentric rings on leaves and capitulum.",
+      "treatment_chemical": "Foliar spray with Mancozeb 75 WP @ 2.5 g/L or Iprodione 50 WP @ 2 g/L at 30, 45, and 60 days..",
+      "treatment_organic": "Seed treatment with Trichoderma harzianum @ 10 g/kg + foliar spray of NSKE (5%).."
+    },
+    {
+      "name": "Rhizopus Head Rot",
+      "name_kn": "ಸೂರ್ಯಕಾಂತಿ ಹೂಗೊಂಚಲು ಕೊಳೆತ ರೋಗ",
+      "name_hi": "सूरजमुखी का हेड रॉट (मुंडी सड़न)",
+      "severity": "Moderate",
+      "image": "/diseases/sunflower_2.jpg",
+      "symptoms": "Soft, water-soaked brown rot on the back of flower heads, followed by coarse black fungal whiskers.",
+      "treatment_chemical": "Spray Mancozeb @ 2 g/L or Copper Oxychloride @ 3 g/L directly onto the back of flower heads..",
+      "treatment_organic": "Spray 1% Bordeaux mixture on flower heads during rainy weather.."
+    }
+  ],
+  "Soybean": [
+    {
+      "name": "Asian Soybean Rust",
+      "name_kn": "ಸೋಯಾಬೀನ್ ತುಕ್ಕು ರೋಗ",
+      "name_hi": "सोयाबीन का एशियाई रस्ट (रतुआ) रोग",
+      "severity": "Severe",
+      "image": "/diseases/soybean_1.jpg",
+      "symptoms": "Tiny tan to reddish-brown lesions with volcanic raised pustules on the underside of foliage causing rapid leaf drop..",
+      "treatment_chemical": "Spray Hexaconazole 5% EC @ 1 ml/L or Propiconazole 25% EC @ 1 ml/L at first appearance..",
+      "treatment_organic": "Spray cow urine (10%) or Trichoderma viride @ 5 g/L.."
+    },
+    {
+      "name": "Charcoal Rot of Soybean",
+      "name_kn": "ಸೋಯಾಬೀನ್ ಇದ್ದಿಲು ಕೊಳೆತ ರೋಗ",
+      "name_hi": "सोयाबीन का चारकोल सड़न रोग",
+      "severity": "Severe",
+      "image": "/diseases/soybean_2.jpg",
+      "symptoms": "Premature drying of leaves which remain attached to the plant.",
+      "treatment_chemical": "Seed treatment with Carboxin + Thiram @ 2 g/kg.",
+      "treatment_organic": "Seed treatment with Trichoderma viride @ 10 g/kg + farmyard manure enrichment.."
+    }
+  ],
+  "Sesame": [
+    {
+      "name": "Sesame Phyllody Disease",
+      "name_kn": "ಎಳ್ಳಿನ ಗೊಂಚಲು ರೋಗ (ಫಿಲೋಡಿ)",
+      "name_hi": "तिल का फाइलोडी / गुच्छा रोग",
+      "severity": "Severe",
+      "image": "/diseases/sesame_1.jpg",
+      "symptoms": "Floral parts are transformed into leafy green malformed structures.",
+      "treatment_chemical": "Spray Dimethoate 30% EC @ 1.7 ml/L or Imidacloprid 17.8% SL @ 0.3 ml/L to kill leafhoppers..",
+      "treatment_organic": "Erect yellow sticky traps (15/acre)."
+    },
+    {
+      "name": "Alternaria Leaf Blight of Sesame",
+      "name_kn": "ಎಳ್ಳಿನ ಆಲ್ಟರ್ನೇರಿಯಾ ಎಲೆ ಚುಕ್ಕೆ ರೋಗ",
+      "name_hi": "तिल का अल्टरनेरिया पत्ती झुलसा",
+      "severity": "Moderate",
+      "image": "/diseases/sesame_2.jpg",
+      "symptoms": "Dark brown to black angular zonate spots on leaves and capsule pods.",
+      "treatment_chemical": "Foliar spray of Mancozeb @ 2 g/L or Copper Oxychloride @ 3 g/L..",
+      "treatment_organic": "Foliar spray of Trichoderma @ 5 g/L.."
+    }
+  ],
+  "Safflower": [
+    {
+      "name": "Safflower Alternaria Leaf Blight",
+      "name_kn": "ಕುಸುಬೆ ಆಲ್ಟರ್ನೇರಿಯಾ ಕರಕಲು ರೋಗ",
+      "name_hi": "कुसुम का अल्टरनेरिया झुलसा रोग",
+      "severity": "Severe",
+      "image": "/diseases/safflower_1.jpg",
+      "symptoms": "Small brown circular spots with concentric rings appearing first on lower leaves and spreading upward to bracts..",
+      "treatment_chemical": "Spray Mancozeb 75 WP @ 2.5 g/L or Tebuconazole @ 1 ml/L at rosette and pre-flowering stages..",
+      "treatment_organic": "Foliar spray with Pseudomonas fluorescens @ 5 g/L or 5% Neem oil.."
+    },
+    {
+      "name": "Fusarium Wilt of Safflower",
+      "name_kn": "ಕುಸುಬೆ ಸೊರಗು ರೋಗ",
+      "name_hi": "कुसुम का उकठा (विल्ट) रोग",
+      "severity": "Moderate",
+      "image": "/diseases/safflower_2.jpg",
+      "symptoms": "Yellowing of leaves on one side of the plant, followed by wilting and vascular browning inside taproot..",
+      "treatment_chemical": "Seed treatment with Carbendazim @ 2 g/kg..",
+      "treatment_organic": "Soil application of Trichoderma viride @ 2.5 kg/acre in compost.."
+    }
+  ],
+  "Castor": [
+    {
+      "name": "Fusarium Wilt of Castor",
+      "name_kn": "ಔಡಲ / ಹರಳು ಸೊರಗು ರೋಗ",
+      "name_hi": "अरंडी का विल्ट (उकठा) रोग",
+      "severity": "Severe",
+      "image": "/diseases/castor_1.jpg",
+      "symptoms": "Dull green foliage, drooping of leaves, interveinal necrosis and blackened vascular strands in the root and lower stem..",
+      "treatment_chemical": "Seed treatment with Thiram + Carbendazim (1:1) @ 3 g/kg seed.",
+      "treatment_organic": "Seed treatment with Trichoderma viride @ 10 g/kg + 2.5 kg/acre in 500 kg FYM.."
+    },
+    {
+      "name": "Castor Seedling Blight / Root Rot",
+      "name_kn": "ಹರಳು ಸಸಿ ಕೊಳೆತ ರೋಗ",
+      "name_hi": "अरंडी का पौध झुलसा व जड़ सड़न",
+      "severity": "Moderate",
+      "image": "/diseases/castor_2.jpg",
+      "symptoms": "Water-soaked lesions on cotyledons and collar region causing rapid damp-off and rotting of seedlings..",
+      "treatment_chemical": "Drench collar region with Metalaxyl MZ @ 2 g/L or Copper Oxychloride @ 3 g/L..",
+      "treatment_organic": "Seed treatment with Pseudomonas fluorescens @ 10 g/kg.."
+    }
+  ],
+  "Niger": [
+    {
+      "name": "Alternaria Leaf Blight of Niger",
+      "name_kn": "ಹುಚ್ಚೆಳ್ಳು ಆಲ್ಟರ್ನೇರಿಯಾ ಎಲೆ ಕರಕಲು ರೋಗ",
+      "name_hi": "रामतिल का अल्टरनेरिया पत्ती झुलसा",
+      "severity": "Severe",
+      "image": "/diseases/niger_1.jpg",
+      "symptoms": "Small brown spots with concentric target-rings on leaves and flower heads, resulting in poor seed formation..",
+      "treatment_chemical": "Spray Mancozeb 75 WP @ 2.5 g/L at early vegetative stage..",
+      "treatment_organic": "Foliar spray with 5% Neem Seed Kernel Extract (NSKE).."
+    },
+    {
+      "name": "Powdery Mildew of Niger",
+      "name_kn": "ಹುಚ್ಚೆಳ್ಳು ಬೂದಿ ರೋಗ",
+      "name_hi": "रामतिल का पाउडरी मिल्ड्यू (चूर्णिल आसिता)",
+      "severity": "Moderate",
+      "image": "/diseases/niger_2.jpg",
+      "symptoms": "White talcum-like powdery coating over upper leaf surface and bracts leading to withered foliage..",
+      "treatment_chemical": "Spray Wettable Sulphur 80 WP @ 3 g/L or Hexaconazole @ 1 ml/L..",
+      "treatment_organic": "Spray 10% cow urine or 0.5% baking soda solution.."
+    }
+  ],
+  "Tobacco (FCV)": [
+    {
+      "name": "Black Shank Disease",
+      "name_kn": "ತಂಬಾಕು ಕಪ್ಪು ಕಾಂಡ ರೋಗ (ಬ್ಲ್ಯಾಕ್ ಶ್ಯಾಂಕ್)",
+      "name_hi": "तंबाकू का ब्लैक शैंक रोग",
+      "severity": "Severe",
+      "image": "/diseases/tobacco_fcv_1.jpg",
+      "symptoms": "Blackening of the stem base near the soil line extending upward.",
+      "treatment_chemical": "Drench nurseries and transplant pits with Metalaxyl MZ @ 2 g/L or Bordeaux mixture 1%..",
+      "treatment_organic": "Seedbed application of Trichoderma viride @ 50 g/m².."
+    },
+    {
+      "name": "Tobacco Mosaic Virus (TMV)",
+      "name_kn": "ತಂಬಾಕು ಮೊಸಾಯಿಕ್ ನಂಜು ರೋಗ",
+      "name_hi": "तंबाकू का मोज़ेक वायरस रोग",
+      "severity": "Moderate",
+      "image": "/diseases/tobacco_fcv_2.jpg",
+      "symptoms": "Mottling with light green and dark green blisters on leaf blades, leaf curling, and stunted growth..",
+      "treatment_chemical": "No direct chemical cure for virus.",
+      "treatment_organic": "Spray skimmed milk solution (100 ml/L) on seedlings before transplanting.."
+    }
+  ],
+  "Mulberry (silk)": [
+    {
+      "name": "Powdery Mildew of Mulberry",
+      "name_kn": "ಹಿಪ್ಪುನೇರಳೆ ಬೂದಿ ರೋಗ",
+      "name_hi": "शहतूत का चूर्णिल आसिता (पाउडरी मिल्ड्यू)",
+      "severity": "Moderate",
+      "image": "/diseases/mulberry_silk_1.jpg",
+      "symptoms": "White floury patches on the lower leaf surface.",
+      "treatment_chemical": "Foliar spray with Wettable Sulphur @ 2 g/L or Dinocap @ 1 ml/L.",
+      "treatment_organic": "Spray aqueous extract of Garlic (5%) or Neem oil (3 ml/L).."
+    },
+    {
+      "name": "Mulberry Root Rot Disease",
+      "name_kn": "ಹಿಪ್ಪುನೇರಳೆ ಬೇರು ಕೊಳೆತ ರೋಗ",
+      "name_hi": "शहतूत का जड़ सड़न रोग",
+      "severity": "Severe",
+      "image": "/diseases/mulberry_silk_2.jpg",
+      "symptoms": "Yellowing and wilting of shoots, decay of bark on roots with dark black discoloration.",
+      "treatment_chemical": "Drench root zones with Carbendazim @ 2 g/L or Copper Oxychloride @ 3 g/L..",
+      "treatment_organic": "Apply 10 kg Trichoderma-enriched organic compost per trench around mulberry stumps.."
+    }
+  ],
+  "Potato": [
+    {
+      "name": "Late Blight of Potato",
+      "name_kn": "ಆಲೂಗಡ್ಡೆ ತಡವಾದ ಅಂಗಮಾರಿ ರೋಗ",
+      "name_hi": "आलू का पिछेती झुलसा (लेट ब्लाइट) रोग",
+      "severity": "Severe",
+      "image": "/diseases/potato_1.jpg",
+      "symptoms": "Water-soaked dark purplish-brown lesions on leaves and stems with white moldy down beneath during damp weather.",
+      "treatment_chemical": "Spray Cymoxanil 8% + Mancozeb 64% WP (Curzate) @ 2.5 g/L or Dimethomorph @ 1 g/L at first appearance..",
+      "treatment_organic": "Prophylactic spray of 1% Bordeaux mixture or Copper Hydroxide @ 2 g/L.."
+    },
+    {
+      "name": "Early Blight of Potato",
+      "name_kn": "ಆಲೂಗಡ್ಡೆ ಮುಂಚಿನ ಅಂಗಮಾರಿ ರೋಗ",
+      "name_hi": "आलू का अगेती झुलसा (अर्ली ब्लाइट) रोग",
+      "severity": "Moderate",
+      "image": "/diseases/potato_2.jpg",
+      "symptoms": "Brown target-board concentric ring spots on older leaves.",
+      "treatment_chemical": "Foliar spray with Mancozeb @ 2.5 g/L or Chlorothalonil @ 2 g/L..",
+      "treatment_organic": "Foliar spray with Pseudomonas fluorescens @ 5 g/L.."
+    }
+  ],
+  "Brinjal": [
+    {
+      "name": "Phomopsis Blight and Fruit Rot",
+      "name_kn": "ಬದನೆ ಕಾಯಿ ಕೊಳೆತ ಮತ್ತು ಎಲೆ ಕರಕಲು ರೋಗ",
+      "name_hi": "बैंगन का फोमोप्सिस झुलसा व फल सड़न",
+      "severity": "Severe",
+      "image": "/diseases/brinjal_1.jpg",
+      "symptoms": "Circular brown leaf spots. Fruits develop soft sunken watery spots covered with black pycnidia, turning into mummified rots..",
+      "treatment_chemical": "Spray Carbendazim @ 1 g/L or Copper Oxychloride @ 3 g/L at 15-day intervals during flowering and fruiting..",
+      "treatment_organic": "Spray 5% Neem Seed Kernel Extract (NSKE) or Trichoderma @ 5 g/L.."
+    },
+    {
+      "name": "Bacterial Wilt of Brinjal",
+      "name_kn": "ಬದನೆ ಬ್ಯಾಕ್ಟೀರಿಯಾ ಸೊರಗು ರೋಗ",
+      "name_hi": "बैंगन का जीवाणु उकठा (बैक्टीरियल विल्ट)",
+      "severity": "Severe",
+      "image": "/diseases/brinjal_2.jpg",
+      "symptoms": "Rapid daytime wilting while foliage remains green.",
+      "treatment_chemical": "Root drenching with Streptocycline @ 0.2 g/L + Copper Oxychloride @ 2 g/L..",
+      "treatment_organic": "Soil application of Pseudomonas fluorescens @ 2.5 kg/acre mixed in FYM at transplanting.."
+    }
+  ],
+  "Okra (Bhendi)": [
+    {
+      "name": "Yellow Vein Mosaic Virus (YVMV)",
+      "name_kn": "ಬೆಂಡೆ ಹಳದಿ ನರ ನಂಜು ರೋಗ",
+      "name_hi": "भिंडी का पीली शिरा मोज़ेक वायरस रोग",
+      "severity": "Severe",
+      "image": "/diseases/okra_bhendi_1.jpg",
+      "symptoms": "Clearing of veins followed by a bold yellow network of veins over green leaf tissue.",
+      "treatment_chemical": "Control whitefly vectors: Spray Thiamethoxam @ 0.3 g/L or Acetamiprid 20% SP @ 0.3 g/L..",
+      "treatment_organic": "Install yellow sticky traps (20 traps/acre)."
+    },
+    {
+      "name": "Powdery Mildew of Okra",
+      "name_kn": "ಬೆಂಡೆ ಬೂದಿ ರೋಗ",
+      "name_hi": "भिंडी का चूर्णिल आसिता (पाउडरी मिल्ड्यू)",
+      "severity": "Moderate",
+      "image": "/diseases/okra_bhendi_2.jpg",
+      "symptoms": "White floury coating over upper and lower leaf surfaces causing severe leaf scorch and shedding..",
+      "treatment_chemical": "Spray Wettable Sulphur 80 WP @ 3 g/L or Dinocap @ 1 ml/L..",
+      "treatment_organic": "Foliar spray with cow milk (10%) or wettable bio-sulphur.."
+    }
+  ],
+  "Cabbage": [
+    {
+      "name": "Black Rot of Cabbage",
+      "name_kn": "ಎಲೆಕೋಸು ಕಪ್ಪು ಕೊಳೆತ ರೋಗ",
+      "name_hi": "पत्तागोभी का काला सड़न (ब्लैक रॉट) रोग",
+      "severity": "Severe",
+      "image": "/diseases/cabbage_1.jpg",
+      "symptoms": "V-shaped yellow lesions with black vein netting along leaf margins.",
+      "treatment_chemical": "Spray Streptocycline @ 0.2 g/L + Copper Oxychloride @ 2.5 g/L at 10-14 day intervals..",
+      "treatment_organic": "Seed soaking in hot water at 50°C for 30 minutes + Pseudomonas fluorescens spray @ 5 g/L.."
+    },
+    {
+      "name": "Clubroot Disease",
+      "name_kn": "ಎಲೆಕೋಸು ಗೆಡ್ಡೆ ಬೇರು ರೋಗ (ಕ್ಲಬ್‌ರೂಟ್)",
+      "name_hi": "पत्तागोभी का क्लब रूट रोग",
+      "severity": "Severe",
+      "image": "/diseases/cabbage_2.jpg",
+      "symptoms": "Daytime wilting with recovery at night. Roots develop huge spindle-shaped club-like galls and swelling..",
+      "treatment_chemical": "Drench transplanting holes with Carbendazim @ 1 g/L or Flusulfamide @ 1.5 g/L..",
+      "treatment_organic": "Incorporate agricultural lime @ 2-3 tons/acre to raise soil pH above 7.2 (clubroot thrives in acidic soil).."
+    }
+  ],
+  "Cauliflower": [
+    {
+      "name": "Downy Mildew of Cauliflower",
+      "name_kn": "ಹೂಕೋಸು ಬೂಜು ರೋಗ (ಡೌನಿ ಮಿಲ್ಡ್ಯೂ)",
+      "name_hi": "फूलगोभी का डाउनी मिल्ड्यू रोग",
+      "severity": "Severe",
+      "image": "/diseases/cauliflower_1.jpg",
+      "symptoms": "Angular yellow chlorotic lesions on upper leaf surface with a delicate purplish-white downy mold underneath.",
+      "treatment_chemical": "Spray Metalaxyl + Mancozeb (Ridomil MZ) @ 2 g/L or Azoxystrobin @ 1 ml/L..",
+      "treatment_organic": "Spray 1% Bordeaux mixture or Trichoderma harzianum @ 5 g/L.."
+    },
+    {
+      "name": "Damping Off & Wirestem",
+      "name_kn": "ಹೂಕೋಸು ಸಸಿ ಕೊಳೆತ ಮತ್ತು ತಂತಿ ಕಾಂಡ ರೋಗ",
+      "name_hi": "फूलगोभी का डैम्पिंग ऑफ व वायरस्टेम",
+      "severity": "Moderate",
+      "image": "/diseases/cauliflower_2.jpg",
+      "symptoms": "Water-soaked girdling of seedling stems at soil level.",
+      "treatment_chemical": "Nursery drench with Copper Oxychloride @ 3 g/L or Captan @ 2.5 g/L..",
+      "treatment_organic": "Seedbed solarization under 25-micron polythene for 30 days + Trichoderma enrichment.."
+    }
+  ],
+  "Carrot": [
+    {
+      "name": "Alternaria Leaf Blight of Carrot",
+      "name_kn": "ಕ್ಯಾರೆಟ್ ಆಲ್ಟರ್ನೇರಿಯಾ ಎಲೆ ಕರಕಲು ರೋಗ",
+      "name_hi": "गाजर का अल्टरनेरिया पत्ती झुलसा",
+      "severity": "Severe",
+      "image": "/diseases/carrot_1.jpg",
+      "symptoms": "Dark brown-black spots with yellow halos on leaf margins.",
+      "treatment_chemical": "Foliar spray with Mancozeb 75 WP @ 2.5 g/L or Difenoconazole @ 0.5 ml/L..",
+      "treatment_organic": "Spray 5% NSKE or Pseudomonas fluorescens @ 5 g/L.."
+    },
+    {
+      "name": "Powdery Mildew of Carrot",
+      "name_kn": "ಕ್ಯಾರೆಟ್ ಬೂದಿ ರೋಗ",
+      "name_hi": "गाजर का चूर्णिल आसिता (पाउडरी मिल्ड्यू)",
+      "severity": "Moderate",
+      "image": "/diseases/carrot_2.jpg",
+      "symptoms": "White powdery growth starting on older leaves and petioles spreading across the whole canopy..",
+      "treatment_chemical": "Spray Wettable Sulphur @ 2.5 g/L or Hexaconazole @ 1 ml/L..",
+      "treatment_organic": "Spray bio-sulfur or diluted cow urine (1:10).."
+    }
+  ],
+  "Beetroot": [
+    {
+      "name": "Cercospora Leaf Spot of Beetroot",
+      "name_kn": "ಬೀಟ್ರೂಟ್ ಸರ್ಕೋಸ್ಪೊರಾ ಎಲೆ ಚುಕ್ಕೆ ರೋಗ",
+      "name_hi": "चुकंदर का सर्कोस्पोरा पत्ती धब्बा",
+      "severity": "Severe",
+      "image": "/diseases/beetroot_1.jpg",
+      "symptoms": "Circular spots with ash-grey centers and reddish-purple borders.",
+      "treatment_chemical": "Spray Mancozeb @ 2 g/L or Carbendazim @ 1 g/L at first appearance of spots..",
+      "treatment_organic": "Spray 5% Neem Seed Kernel Extract (NSKE) or Copper Hydroxide @ 2 g/L.."
+    },
+    {
+      "name": "Root Rot / Damping-off",
+      "name_kn": "ಬೀಟ್ರೂಟ್ ಬೇರು ಮತ್ತು ಗಡ್ಡೆ ಕೊಳೆತ ರೋಗ",
+      "name_hi": "चुकंदर का जड़ सड़न रोग",
+      "severity": "Moderate",
+      "image": "/diseases/beetroot_2.jpg",
+      "symptoms": "Sunken dark brown cankers on beet roots near the soil line with soft rotting of crown tissue..",
+      "treatment_chemical": "Drench soil around plants with Copper Oxychloride @ 3 g/L..",
+      "treatment_organic": "Apply Trichoderma viride enriched FYM @ 2 tons/acre during land preparation.."
+    }
+  ],
+  "French beans": [
+    {
+      "name": "Bean Anthracnose",
+      "name_kn": "ಬೀನ್ಸ್ ಆಂಥ್ರಾಕ್ನೋಸ್ ಮತ್ತು ಕಾಯಿ ಚುಕ್ಕೆ ರೋಗ",
+      "name_hi": "फ्रेंच बीन्स का एंथ्रेक्नोज रोग",
+      "severity": "Severe",
+      "image": "/diseases/french_beans_1.jpg",
+      "symptoms": "Deep sunken circular lesions with reddish-brown margins on green pods.",
+      "treatment_chemical": "Spray Carbendazim 50 WP @ 1 g/L or Mancozeb @ 2.5 g/L at 10-day intervals during flowering and pod development..",
+      "treatment_organic": "Spray 1% Bordeaux mixture or Trichoderma @ 5 g/L.."
+    },
+    {
+      "name": "Bean Rust",
+      "name_kn": "ಬೀನ್ಸ್ ತುಕ್ಕು ರೋಗ",
+      "name_hi": "फ्रेंच बीन्स का रतुआ (रस्ट) रोग",
+      "severity": "Moderate",
+      "image": "/diseases/french_beans_2.jpg",
+      "symptoms": "Reddish-brown powdery pustules on both leaf surfaces surrounded by chlorotic yellow halos..",
+      "treatment_chemical": "Spray Wettable Sulphur @ 3 g/L or Hexaconazole @ 1 ml/L..",
+      "treatment_organic": "Spray sour buttermilk (5%) or Neem oil (3 ml/L).."
+    }
+  ],
+  "Cucumber": [
+    {
+      "name": "Downy Mildew of Cucumber",
+      "name_kn": "ಸೌತೆಕಾಯಿ ಬೂಜು ರೋಗ (ಡೌನಿ ಮಿಲ್ಡ್ಯೂ)",
+      "name_hi": "खीरे का डाउनी मिल्ड्यू रोग",
+      "severity": "Severe",
+      "image": "/diseases/cucumber_1.jpg",
+      "symptoms": "Angular yellow chlorotic lesions bound by leaf veins on upper leaf surface with purplish-gray downy mold underneath..",
+      "treatment_chemical": "Spray Cymoxanil 8% + Mancozeb 64% WP @ 2.5 g/L or Dimethomorph @ 1 g/L..",
+      "treatment_organic": "Foliar spray of 1% Bordeaux mixture or Trichoderma viride @ 5 g/L.."
+    },
+    {
+      "name": "Powdery Mildew of Cucumber",
+      "name_kn": "ಸೌತೆಕಾಯಿ ಬೂದಿ ರೋಗ",
+      "name_hi": "खीरे का पाउडरी मिल्ड्यू (चूर्णिल आसिता)",
+      "severity": "Moderate",
+      "image": "/diseases/cucumber_2.jpg",
+      "symptoms": "White powdery fungal growth spreading across upper leaf surfaces and stems, causing premature vine collapse..",
+      "treatment_chemical": "Spray Dinocap @ 1 ml/L or Penconazole 10% EC @ 0.5 ml/L..",
+      "treatment_organic": "Spray milk-water solution (1:9) or wettable sulphur bio-agent.."
+    }
+  ],
+  "Pumpkin": [
+    {
+      "name": "Gummy Stem Blight of Pumpkin",
+      "name_kn": "ಕುಂಬಳಕಾಯಿ ಅಂಟು ಕಾಂಡ ಕೊಳೆತ ರೋಗ",
+      "name_hi": "कद्दू का गमी स्टेम ब्लाइट रोग",
+      "severity": "Severe",
+      "image": "/diseases/pumpkin_1.jpg",
+      "symptoms": "Circular brown leaf spots. Stems develop water-soaked lesions that exude an amber-brown gummy fluid..",
+      "treatment_chemical": "Spray Chlorothalonil 75 WP @ 2 g/L or Azoxystrobin @ 1 ml/L..",
+      "treatment_organic": "Spray Copper Hydroxide @ 2 g/L.."
+    },
+    {
+      "name": "Downy Mildew of Pumpkin",
+      "name_kn": "ಕುಂಬಳಕಾಯಿ ಡೌನಿ ಮಿಲ್ಡ್ಯೂ ರೋಗ",
+      "name_hi": "कद्दू का तुलासिता (डाउनी मिल्ड्यू) रोग",
+      "severity": "Moderate",
+      "image": "/diseases/pumpkin_2.jpg",
+      "symptoms": "Angular bright yellow spots on leaves with downy purplish-gray mold underneath..",
+      "treatment_chemical": "Spray Metalaxyl MZ @ 2 g/L..",
+      "treatment_organic": "Spray 5% NSKE + soft soap.."
+    }
+  ],
+  "Bottle gourd": [
+    {
+      "name": "Anthracnose of Bottle Gourd",
+      "name_kn": "ಸೋರೆಕಾಯಿ ಆಂಥ್ರಾಕ್ನೋಸ್ ಮತ್ತು ಕಾಯಿ ಕೊಳೆತ",
+      "name_hi": "लौकी का एंथ्रेक्नोज व फल सड़न",
+      "severity": "Severe",
+      "image": "/diseases/bottle_gourd_1.jpg",
+      "symptoms": "Circular water-soaked sunken lesions on fruits with gelatinous salmon-pink spore droplets.",
+      "treatment_chemical": "Foliar spray with Carbendazim @ 1 g/L or Mancozeb @ 2 g/L at 12-day intervals..",
+      "treatment_organic": "Spray 1% Bordeaux mixture or Trichoderma @ 5 g/L.."
+    },
+    {
+      "name": "Cucumber Mosaic Virus on Bottle Gourd",
+      "name_kn": "ಸೋರೆಕಾಯಿ ಮೊಸಾಯಿಕ್ ನಂಜು ರೋಗ",
+      "name_hi": "लौकी का मोज़ेक वायरस रोग",
+      "severity": "Moderate",
+      "image": "/diseases/bottle_gourd_2.jpg",
+      "symptoms": "Mosaic mottling, leaf distortion, blister-like puckering and malformed warty fruits..",
+      "treatment_chemical": "Spray Imidacloprid @ 0.3 ml/L or Dimethoate @ 1.7 ml/L to control aphid vectors..",
+      "treatment_organic": "Install yellow sticky traps (15/acre)."
+    }
+  ],
+  "Drumstick": [
+    {
+      "name": "Drumstick Fruit Rot / Pod Rot",
+      "name_kn": "ನುಗ್ಗೆಕಾಯಿ ಕೊಳೆತ ರೋಗ",
+      "name_hi": "सहजन का फली सड़न रोग",
+      "severity": "Severe",
+      "image": "/diseases/drumstick_1.jpg",
+      "symptoms": "Pods rot from tip upwards with brown discoloration, weeping exudate and internal seed blackening..",
+      "treatment_chemical": "Spray Mancozeb 75 WP @ 2.5 g/L or Copper Oxychloride @ 3 g/L at pod initiation..",
+      "treatment_organic": "Spray 1% Bordeaux mixture or 5% Neem Seed Kernel Extract (NSKE).."
+    },
+    {
+      "name": "Twig Canker and Die-Back",
+      "name_kn": "ನುಗ್ಗೆ ಕೊಂಬೆ ಒಣಗು ರೋಗ (ಡೈ-ಬ್ಯಾಕ್)",
+      "name_hi": "सहजन का टहनी सूखा व कैंकर रोग",
+      "severity": "Moderate",
+      "image": "/diseases/drumstick_2.jpg",
+      "symptoms": "Drying and die-back of terminal twigs progressing downward.",
+      "treatment_chemical": "Prune dried twigs 5 cm below infection and apply Bordeaux paste on cut surfaces..",
+      "treatment_organic": "Apply cow dung-neem paste on pruned limb stubs.."
+    }
+  ],
+  "Mango": [
+    {
+      "name": "Mango Anthracnose",
+      "name_kn": "ಮಾವಿನ ಆಂಥ್ರಾಕ್ನೋಸ್ ಮತ್ತು ಕಪ್ಪು ಚುಕ್ಕೆ ರೋಗ",
+      "name_hi": "आम का एंथ्रेक्नोज व काला धब्बा रोग",
+      "severity": "Severe",
+      "image": "/diseases/mango_1.jpg",
+      "symptoms": "Black tear-staining spots on fruits, blossom blight on panicles causing flower drop, and leaf anthracnose spots..",
+      "treatment_chemical": "Spray Carbendazim @ 1 g/L or Azoxystrobin @ 1 ml/L at panicle emergence and fruit marble stage..",
+      "treatment_organic": "Spray 1% Bordeaux mixture before flowering and after fruit harvest.."
+    },
+    {
+      "name": "Powdery Mildew of Mango",
+      "name_kn": "ಮಾವಿನ ಬೂದಿ ರೋಗ",
+      "name_hi": "आम का चूर्णिल आसिता (पाउडरी मिल्ड्यू)",
+      "severity": "Severe",
+      "image": "/diseases/mango_2.jpg",
+      "symptoms": "White powdery fungal bloom covering inflorescence panicles, flowers, and tiny fruitlets causing massive fruit drop..",
+      "treatment_chemical": "Spray Wettable Sulphur 80 WP @ 3 g/L or Hexaconazole 5% EC @ 1 ml/L at bud burst and full bloom..",
+      "treatment_organic": "Foliar spray with bio-sulfur or Pseudomonas fluorescens @ 5 g/L.."
+    }
+  ],
+  "Papaya": [
+    {
+      "name": "Papaya Ring Spot Virus (PRSV)",
+      "name_kn": "ಪಪ್ಪಾಯಿ ಉಂಗುರ ಚುಕ್ಕೆ ನಂಜು ರೋಗ (ಪಿಆರ್‌ಎಸ್‌ವಿ)",
+      "name_hi": "पपीते का रिंग स्पॉट वायरस रोग",
+      "severity": "Severe",
+      "image": "/diseases/papaya_1.jpg",
+      "symptoms": "Yellow mosaic mottle on leaves, shoe-stringing of leaf blades, oily dark green streaks on petioles and concentric ring spots on green fruits..",
+      "treatment_chemical": "Spray Imidacloprid @ 0.3 ml/L or Thiamethoxam @ 0.3 g/L to manage aphid vector populations..",
+      "treatment_organic": "Erect barrier crops of 3 rows of Maize or Sorghum around the papaya plot."
+    },
+    {
+      "name": "Papaya Collar Rot / Foot Rot",
+      "name_kn": "ಪಪ್ಪಾಯಿ ಬುಡ ಕೊಳೆತ ರೋಗ",
+      "name_hi": "पपीते का कॉलर रॉट (पाद विगलन)",
+      "severity": "Severe",
+      "image": "/diseases/papaya_2.jpg",
+      "symptoms": "Water-soaked spongy lesions at the stem base near the soil line.",
+      "treatment_chemical": "Drench trunk base and basin with Metalaxyl MZ @ 2 g/L or Copper Oxychloride @ 3 g/L..",
+      "treatment_organic": "Apply Trichoderma viride (50 g/tree) mixed with neem cake in the root basin.."
+    }
+  ],
+  "Sapota (Chikku)": [
+    {
+      "name": "Phaeophleospora Leaf Spot of Sapota",
+      "name_kn": "ಚಿಕ್ಕು / ಸಪೋಟ ಎಲೆ ಚುಕ್ಕೆ ರೋಗ",
+      "name_hi": "चीकू का पत्ती धब्बा रोग",
+      "severity": "Severe",
+      "image": "/diseases/sapota_chikku_1.jpg",
+      "symptoms": "Numerous circular red-brown spots with whitish centers on leaves causing heavy premature leaf defoliation and small fruits..",
+      "treatment_chemical": "Spray Mancozeb @ 2 g/L or Carbendazim @ 1 g/L at monthly intervals during the monsoon..",
+      "treatment_organic": "Spray 1% Bordeaux mixture or 5% Neem Seed Kernel Extract (NSKE).."
+    },
+    {
+      "name": "Sooty Mold of Sapota",
+      "name_kn": "ಚಿಕ್ಕು ಕಾಡಿಗೆ ಬೂಜು ರೋಗ (ಸೂಟಿ ಮೋಲ್ಡ್)",
+      "name_hi": "चीकू का काली फफूंद (सूटी मोल्ड) रोग",
+      "severity": "Moderate",
+      "image": "/diseases/sapota_chikku_2.jpg",
+      "symptoms": "Thick black velvety soot covering upper leaf surfaces and fruit skins, hampering photosynthesis..",
+      "treatment_chemical": "Spray Starch solution (2%) or wettable sulphur @ 3 g/L + Chlorpyriphos @ 2 ml/L to kill scale insects..",
+      "treatment_organic": "Spray Fish Oil Rosin Soap (25 g/L) to wash off scale insects and sooty crust.."
+    }
+  ],
+  "Guava": [
+    {
+      "name": "Guava Wilt Disease",
+      "name_kn": "ಸೀಬೆ / ಪೇರಲ ಸೊರಗು ರೋಗ",
+      "name_hi": "अमरूद का उकठा (विल्ट) रोग",
+      "severity": "Severe",
+      "image": "/diseases/guava_1.jpg",
+      "symptoms": "Yellowing and wilting of twigs from one side, premature leaf shedding, bark splitting, and complete drying of the tree within months..",
+      "treatment_chemical": "Soil drenching around root zone with Carbendazim @ 2 g/L or Copper Oxychloride @ 3 g/L..",
+      "treatment_organic": "Incorporate Trichoderma harzianum @ 50 g + Neem cake @ 2 kg per tree basin twice annually.."
+    },
+    {
+      "name": "Guava Anthracnose and Canker",
+      "name_kn": "ಸೀಬೆ ಕಾಯಿ ಚುಕ್ಕೆ ಮತ್ತು ಕೊಳೆತ ರೋಗ",
+      "name_hi": "अमरूद का एंथ्रेक्नोज व फल कैंकर",
+      "severity": "Moderate",
+      "image": "/diseases/guava_2.jpg",
+      "symptoms": "Raised circular crater-like corky cankers on fruit skin with cracking.",
+      "treatment_chemical": "Spray Copper Oxychloride @ 3 g/L or Mancozeb @ 2.5 g/L at 15-day intervals during fruit set..",
+      "treatment_organic": "Spray 1% Bordeaux mixture after pruning and before flowering.."
+    }
+  ],
+  "Watermelon": [
+    {
+      "name": "Fusarium Wilt of Watermelon",
+      "name_kn": "ಕಲ್ಲಂಗಡಿ ಸೊರಗು ರೋಗ",
+      "name_hi": "तरबूज का उकठा (विल्ट) रोग",
+      "severity": "Severe",
+      "image": "/diseases/watermelon_1.jpg",
+      "symptoms": "Sudden wilting of individual vine runners during warm afternoons.",
+      "treatment_chemical": "Drench basin with Carbendazim @ 1 g/L or Thiophanate Methyl @ 1 g/L..",
+      "treatment_organic": "Seed treatment with Trichoderma viride @ 10 g/kg + soil incorporation with FYM.."
+    },
+    {
+      "name": "Gummy Stem Blight of Watermelon",
+      "name_kn": "ಕಲ್ಲಂಗಡಿ ಅಂಟು ಕಾಂಡ ಕೊಳೆತ",
+      "name_hi": "तरबूज का गमी स्टेम ब्लाइट",
+      "severity": "Moderate",
+      "image": "/diseases/watermelon_2.jpg",
+      "symptoms": "Circular brown leaf lesions. Stem develops water-soaked cankers oozing reddish-brown gum..",
+      "treatment_chemical": "Spray Chlorothalonil 75 WP @ 2 g/L or Azoxystrobin @ 1 ml/L..",
+      "treatment_organic": "Foliar spray with Copper Hydroxide @ 2 g/L.."
+    }
+  ],
+  "Black pepper": [
+    {
+      "name": "Quick Wilt / Foot Rot of Black Pepper",
+      "name_kn": "ಕಾಳುಮೆಣಸು ಕ್ಷಿಪ್ರ ಸೊರಗು ರೋಗ (ಫೂಟ್ ರಾಟ್)",
+      "name_hi": "काली मिर्च का त्वरित उकठा (फुट रॉट) रोग",
+      "severity": "Severe",
+      "image": "/diseases/black_pepper_1.jpg",
+      "symptoms": "Rapid wilting and shedding of all leaves, spikes and lateral branches within a few days.",
+      "treatment_chemical": "Drench vine basins with Potassium Phosphonate (Akomin) @ 3 ml/L or Metalaxyl MZ @ 2 g/L in June and August..",
+      "treatment_organic": "Apply Trichoderma harzianum @ 50 g mixed in 5 kg FYM + Neem cake to each vine collar.."
+    },
+    {
+      "name": "Pollu Disease / Anthracnose",
+      "name_kn": "ಕಾಳುಮೆಣಸು ಪೊಲ್ಲು ರೋಗ",
+      "name_hi": "काली मिर्च का पोल्लू / एंथ्रेक्नोज रोग",
+      "severity": "Moderate",
+      "image": "/diseases/black_pepper_2.jpg",
+      "symptoms": "Brown circular spots on leaves and berries. Infected berries turn hollow, light, and black (Pollu berries)..",
+      "treatment_chemical": "Spray 1% Bordeaux mixture or Carbendazim @ 1 g/L in June-July and September..",
+      "treatment_organic": "Spray Pseudomonas fluorescens @ 5 g/L with sticker.."
+    }
+  ],
+  "Cardamom": [
+    {
+      "name": "Capsule Rot / Azhukal Disease",
+      "name_kn": "ಏಲಕ್ಕಿ ಕೊಳೆ ರೋಗ (ಅಳುಕಲ್ ರೋಗ)",
+      "name_hi": "इलायची का कैप्सूल सड़न (अझुकल) रोग",
+      "severity": "Severe",
+      "image": "/diseases/cardamom_1.jpg",
+      "symptoms": "Water-soaked lesions on young capsules which rot and detach easily.",
+      "treatment_chemical": "Spray 1% Bordeaux mixture on leaves and drench panicles with Potassium Phosphonate @ 3 ml/L prior to monsoon onset..",
+      "treatment_organic": "Soil application of Trichoderma viride @ 50 g + 2 kg neem cake per clump.."
+    },
+    {
+      "name": "Katte / Mosaic Disease of Cardamom",
+      "name_kn": "ಏಲಕ್ಕಿ ಕತ್ತೆ ನಂಜು ರೋಗ (ಮೊಸಾಯಿಕ್)",
+      "name_hi": "इलायची का कट्टे / मोज़ेक वायरस रोग",
+      "severity": "Severe",
+      "image": "/diseases/cardamom_2.jpg",
+      "symptoms": "Discontinuous chlorotic stripes on young emerging leaves.",
+      "treatment_chemical": "Spray Dimethoate 30% EC @ 1.7 ml/L to manage aphid vector colonies on pseudostems..",
+      "treatment_organic": "Spray Neem oil (3 ml/L) with soap solution.."
+    }
+  ],
+  "Turmeric": [
+    {
+      "name": "Rhizome Rot / Soft Rot of Turmeric",
+      "name_kn": "ಅರಿಶಿನ ಗಡ್ಡೆ ಕೊಳೆತ ರೋಗ",
+      "name_hi": "हल्दी का कंद सड़न (प्रकंद विगलन) रोग",
+      "severity": "Severe",
+      "image": "/diseases/turmeric_1.jpg",
+      "symptoms": "Yellowing of leaves from margins inward. Pseudostem collar becomes soft and easily pulls out with rotten, foul-smelling rhizomes..",
+      "treatment_chemical": "Rhizome treatment with Metalaxyl MZ @ 2 g/L before planting.",
+      "treatment_organic": "Rhizome dip in Trichoderma viride @ 10 g/L + application of 2 tons neem-enriched FYM per acre.."
+    },
+    {
+      "name": "Leaf Blotch of Turmeric",
+      "name_kn": "ಅರಿಶಿನ ಎಲೆ ಕಲೆ ರೋಗ (ಟಫ್ರಿನಾ)",
+      "name_hi": "हल्दी का पर्ण धब्बा (लीफ ब्लॉच) रोग",
+      "severity": "Moderate",
+      "image": "/diseases/turmeric_2.jpg",
+      "symptoms": "Small oval reddish-brown to yellow spots on both leaf surfaces which coalesce into large brown patches..",
+      "treatment_chemical": "Spray Mancozeb @ 2.5 g/L or Propiconazole @ 1 ml/L at first symptom detection..",
+      "treatment_organic": "Foliar spray of 1% Bordeaux mixture or Pseudomonas @ 5 g/L.."
+    }
+  ],
+  "Ginger": [
+    {
+      "name": "Soft Rot / Rhizome Rot of Ginger",
+      "name_kn": "ಶುಂಠಿ ಬೆಂಕಿ ರೋಗ / ಗಡ್ಡೆ ಕೊಳೆತ ರೋಗ",
+      "name_hi": "अदरक का प्रकंद सड़न (सॉफ्ट रॉट) रोग",
+      "severity": "Severe",
+      "image": "/diseases/ginger_1.jpg",
+      "symptoms": "Water-soaking at the collar region of pseudostems, lower leaves turn yellow and wither.",
+      "treatment_chemical": "Treat seed rhizomes with Metalaxyl MZ @ 2 g/L.",
+      "treatment_organic": "Treat rhizomes with Trichoderma harzianum @ 10 g/L for 30 minutes."
+    },
+    {
+      "name": "Bacterial Wilt of Ginger",
+      "name_kn": "ಶುಂಠಿ ಬ್ಯಾಕ್ಟೀರಿಯಾ ಸೊರಗು ರೋಗ",
+      "name_hi": "अदरक का जीवाणु उकठा (बैक्टीरियल विल्ट)",
+      "severity": "Severe",
+      "image": "/diseases/ginger_2.jpg",
+      "symptoms": "Rapid bronzing and downward rolling of leaf margins followed by sudden wilting.",
+      "treatment_chemical": "Soil drenching with Streptocycline @ 0.2 g/L + Copper Oxychloride @ 2 g/L..",
+      "treatment_organic": "Incorporate Pseudomonas fluorescens @ 10 kg/acre in well-decomposed FYM at planting.."
+    }
+  ],
+  "Cashew": [
+    {
+      "name": "Die-Back / Pink Disease of Cashew",
+      "name_kn": "ಗೇರು ಕೊಂಬೆ ಒಣಗು ರೋಗ (ಡೈ-ಬ್ಯಾಕ್)",
+      "name_hi": "काजू का टहनी सूखा (डाई-बैक) व पिंक रोग",
+      "severity": "Severe",
+      "image": "/diseases/cashew_1.jpg",
+      "symptoms": "Pinkish-white fungal incrustation on branches.",
+      "treatment_chemical": "Prune infected branches 10 cm below infection and swab cuts with Bordeaux paste (10%).",
+      "treatment_organic": "Apply cow dung + copper sulfate paste on pruning cuts.."
+    },
+    {
+      "name": "Cashew Anthracnose",
+      "name_kn": "ಗೇರು ಆಂಥ್ರಾಕ್ನೋಸ್ ರೋಗ",
+      "name_hi": "काजू का एंथ्रेक्नोज रोग",
+      "severity": "Moderate",
+      "image": "/diseases/cashew_2.jpg",
+      "symptoms": "Water-soaked lesions on young flushes, inflorescence panicles and nuts, turning into reddish-brown sunken cankers..",
+      "treatment_chemical": "Foliar spray with Carbendazim @ 1 g/L or Mancozeb @ 2.5 g/L during new vegetative flush..",
+      "treatment_organic": "Spray 1% Bordeaux mixture or Neem extract (5%).."
+    }
+  ],
+  "Marigold": [
+    {
+      "name": "Alternaria Leaf Spot and Flower Blight",
+      "name_kn": "ಚೆಂಡುಹೂವು ಆಲ್ಟರ್ನೇರಿಯಾ ಎಲೆ ಮತ್ತು ಹೂ ಕರಕಲು ರೋಗ",
+      "name_hi": "गेंदे का अल्टरनेरिया पत्ती व फूल झुलसा",
+      "severity": "Severe",
+      "image": "/diseases/marigold_1.jpg",
+      "symptoms": "Circular brownish-black spots on leaves. Flower buds turn black and fail to open; mature petals turn soggy brown and rot..",
+      "treatment_chemical": "Foliar spray with Mancozeb 75 WP @ 2 g/L or Iprodione @ 2 g/L at 10-day intervals from bud formation..",
+      "treatment_organic": "Foliar spray of 5% Neem Seed Kernel Extract (NSKE) or Trichoderma viride @ 5 g/L.."
+    },
+    {
+      "name": "Collar Rot and Root Rot of Marigold",
+      "name_kn": "ಚೆಂಡುಹೂವು ಬುಡ ಕೊಳೆತ ರೋಗ",
+      "name_hi": "गेंदे का कॉलर रॉट व जड़ सड़न",
+      "severity": "Severe",
+      "image": "/diseases/marigold_2.jpg",
+      "symptoms": "Blackening and water-soaked rotting of the stem base near the soil line causing sudden collapse and wilting of plants..",
+      "treatment_chemical": "Soil drenching around plants with Copper Oxychloride @ 3 g/L or Metalaxyl MZ @ 2 g/L..",
+      "treatment_organic": "Drench with Trichoderma harzianum @ 10 g/L + application of bio-enriched vermicompost.."
+    }
+  ]
+}

@@ -1,0 +1,178 @@
+<svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Golden Blinking Radial Aura -->
+    <radialGradient id="maizeGoldGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FEF08A" stop-opacity="0.9"/>
+      <stop offset="40%" stop-color="#FACC15" stop-opacity="0.6"/>
+      <stop offset="75%" stop-color="#EAB308" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#CA8A04" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Golden Cob Gradient -->
+    <linearGradient id="cobBase" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FEF08A"/>
+      <stop offset="50%" stop-color="#FBBF24"/>
+      <stop offset="100%" stop-color="#D97706"/>
+    </linearGradient>
+
+    <!-- Kernel High Gold Gradient -->
+    <linearGradient id="kernelGold1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFBEB"/>
+      <stop offset="30%" stop-color="#FEF08A"/>
+      <stop offset="70%" stop-color="#FACC15"/>
+      <stop offset="100%" stop-color="#CA8A04"/>
+    </linearGradient>
+
+    <!-- Kernel Warm Gold Gradient -->
+    <linearGradient id="kernelGold2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FEF9C3"/>
+      <stop offset="40%" stop-color="#F59E0B"/>
+      <stop offset="85%" stop-color="#D97706"/>
+      <stop offset="100%" stop-color="#92400E"/>
+    </linearGradient>
+
+    <!-- Opening Husk Left Gradient -->
+    <linearGradient id="huskLeft" x1="100%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#14532D"/>
+      <stop offset="45%" stop-color="#16A34A"/>
+      <stop offset="85%" stop-color="#4ADE80"/>
+      <stop offset="100%" stop-color="#86EFAC"/>
+    </linearGradient>
+
+    <!-- Opening Husk Right Gradient -->
+    <linearGradient id="huskRight" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#14532D"/>
+      <stop offset="45%" stop-color="#15803D"/>
+      <stop offset="85%" stop-color="#22C55E"/>
+      <stop offset="100%" stop-color="#86EFAC"/>
+    </linearGradient>
+
+    <!-- Inner Husk Shadow -->
+    <linearGradient id="huskInner" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#86EFAC"/>
+      <stop offset="70%" stop-color="#166534"/>
+      <stop offset="100%" stop-color="#052E16"/>
+    </linearGradient>
+
+    <!-- Corn Silk Gradient -->
+    <linearGradient id="cornSilk" x1="0%" y1="100%" x2="50%" y2="0%">
+      <stop offset="0%" stop-color="#D97706"/>
+      <stop offset="60%" stop-color="#FBBF24"/>
+      <stop offset="100%" stop-color="#FEF08A"/>
+    </linearGradient>
+
+    <!-- Gold Blinking Filter -->
+    <filter id="goldBlinkFilter" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background Golden Halo -->
+  <circle cx="32" cy="32" r="30" fill="url(#maizeGoldGlow)" opacity="0.85"/>
+
+  <!-- Golden Radiance Rays / Dotted Halo -->
+  <circle cx="32" cy="32" r="28" stroke="#FACC15" stroke-width="1.2" stroke-dasharray="3 3" opacity="0.6"/>
+
+  <!-- Corn Silk at top (Golden tassels emerging) -->
+  <g stroke="url(#cornSilk)" stroke-linecap="round" opacity="0.95" filter="url(#goldBlinkFilter)">
+    <path d="M 31 16 Q 28 9 26 4" stroke-width="1.2"/>
+    <path d="M 32 15 Q 32 8 32 2" stroke-width="1.4"/>
+    <path d="M 33 16 Q 36 9 38 4" stroke-width="1.2"/>
+    <path d="M 30 18 Q 24 13 22 7" stroke-width="1"/>
+    <path d="M 34 18 Q 40 13 43 7" stroke-width="1"/>
+  </g>
+
+  <!-- Central Corn Cob Body (Behind opening husks) -->
+  <path d="M 24 53 C 21 42 22 25 26 15 C 29 12 35 12 38 15 C 42 25 43 42 40 53 Z" fill="url(#cobBase)"/>
+
+  <!-- Golden Corn Kernels Grid (Rows of detailed glowing gold seeds) -->
+  <!-- Row 1 (Top tip) -->
+  <g fill="url(#kernelGold1)">
+    <circle cx="30" cy="17" r="1.8"/>
+    <circle cx="34" cy="17" r="1.8"/>
+  </g>
+  <!-- Row 2 -->
+  <g fill="url(#kernelGold2)">
+    <rect x="27.5" y="20" width="3" height="3" rx="1.2" fill="url(#kernelGold1)"/>
+    <rect x="31" y="20" width="3.2" height="3" rx="1.2" fill="url(#kernelGold1)"/>
+    <rect x="34.6" y="20" width="3" height="3" rx="1.2" fill="url(#kernelGold2)"/>
+  </g>
+  <!-- Row 3 -->
+  <g>
+    <rect x="26" y="24" width="3.4" height="3.4" rx="1.2" fill="url(#kernelGold2)"/>
+    <rect x="30" y="24" width="3.6" height="3.4" rx="1.2" fill="url(#kernelGold1)"/>
+    <rect x="34.2" y="24" width="3.6" height="3.4" rx="1.2" fill="url(#kernelGold1)"/>
+    <rect x="38.2" y="24" width="3.2" height="3.4" rx="1.2" fill="url(#kernelGold2)"/>
+  </g>
+  <!-- Row 4 -->
+  <g>
+    <rect x="25.5" y="28.5" width="3.6" height="3.6" rx="1.3" fill="url(#kernelGold1)"/>
+    <rect x="29.7" y="28.5" width="3.8" height="3.6" rx="1.3" fill="url(#kernelGold1)"/>
+    <rect x="34.1" y="28.5" width="3.8" height="3.6" rx="1.3" fill="url(#kernelGold2)"/>
+    <rect x="38.5" y="28.5" width="3.4" height="3.6" rx="1.3" fill="url(#kernelGold1)"/>
+  </g>
+  <!-- Row 5 -->
+  <g>
+    <rect x="25.5" y="33.2" width="3.6" height="3.6" rx="1.3" fill="url(#kernelGold2)"/>
+    <rect x="29.7" y="33.2" width="3.8" height="3.6" rx="1.3" fill="url(#kernelGold1)"/>
+    <rect x="34.1" y="33.2" width="3.8" height="3.6" rx="1.3" fill="url(#kernelGold1)"/>
+    <rect x="38.5" y="33.2" width="3.4" height="3.6" rx="1.3" fill="url(#kernelGold2)"/>
+  </g>
+  <!-- Row 6 -->
+  <g>
+    <rect x="26" y="38" width="3.6" height="3.6" rx="1.3" fill="url(#kernelGold1)"/>
+    <rect x="30.2" y="38" width="3.8" height="3.6" rx="1.3" fill="url(#kernelGold1)"/>
+    <rect x="34.6" y="38" width="3.8" height="3.6" rx="1.3" fill="url(#kernelGold2)"/>
+    <rect x="38.8" y="38" width="3.2" height="3.6" rx="1.3" fill="url(#kernelGold1)"/>
+  </g>
+  <!-- Row 7 -->
+  <g>
+    <rect x="27" y="42.8" width="3.6" height="3.4" rx="1.2" fill="url(#kernelGold2)"/>
+    <rect x="31" y="42.8" width="3.8" height="3.4" rx="1.2" fill="url(#kernelGold1)"/>
+    <rect x="35.2" y="42.8" width="3.6" height="3.4" rx="1.2" fill="url(#kernelGold1)"/>
+  </g>
+  <!-- Row 8 (Bottom) -->
+  <g fill="url(#kernelGold2)">
+    <rect x="28" y="47.2" width="3.6" height="3" rx="1.2"/>
+    <rect x="32.2" y="47.2" width="3.6" height="3" rx="1.2" fill="url(#kernelGold1)"/>
+  </g>
+
+  <!-- OPENING HUSKS (PEELING LEAVES ON BOTH SIDES) -->
+
+  <!-- Left Husk (Gracefully peeling outward to the left) -->
+  <path d="M 29 59 C 24 57 15 50 10 38 C 7 30 7 21 8 13 C 11 21 16 32 23 42 C 26 47 28 53 29 59 Z" fill="url(#huskLeft)" filter="url(#goldBlinkFilter)"/>
+  <!-- Left Husk Inner Shadow / Curl -->
+  <path d="M 12 36 C 17 44 24 50 28 56 C 26 48 22 41 16 33 Z" fill="url(#huskInner)" opacity="0.6"/>
+  <!-- Left Husk Rib Line -->
+  <path d="M 9 17 Q 12 30 22 46" stroke="#BBF7D0" stroke-width="0.9" stroke-linecap="round" opacity="0.8"/>
+
+  <!-- Right Husk (Gracefully peeling outward to the right) -->
+  <path d="M 35 59 C 40 57 49 50 54 38 C 57 30 57 21 56 13 C 53 21 48 32 41 42 C 38 47 36 53 35 59 Z" fill="url(#huskRight)" filter="url(#goldBlinkFilter)"/>
+  <!-- Right Husk Inner Shadow / Curl -->
+  <path d="M 52 36 C 47 44 40 50 36 56 C 38 48 42 41 48 33 Z" fill="url(#huskInner)" opacity="0.6"/>
+  <!-- Right Husk Rib Line -->
+  <path d="M 55 17 Q 52 30 42 46" stroke="#BBF7D0" stroke-width="0.9" stroke-linecap="round" opacity="0.8"/>
+
+  <!-- Lower Back Husk Sheath / Stem Base -->
+  <path d="M 27 57 C 29 62 31 64 32 64 C 33 64 35 62 37 57 Z" fill="#14532D"/>
+
+  <!-- GLOWING GOLDEN SPECULAR BLINK SPARKLES -->
+  <g filter="url(#goldBlinkFilter)">
+    <!-- Main Center Flash Star -->
+    <polygon points="32,23 33.2,26 36,27.2 33.2,28.4 32,31 30.8,28.4 28,27.2 30.8,26" fill="#FFFFFF"/>
+    <!-- Upper Sparkle Star -->
+    <polygon points="36,13 36.8,14.8 38.6,15.5 36.8,16.2 36,18 35.2,16.2 33.4,15.5 35.2,14.8" fill="#FEF08A"/>
+    <!-- Lower Sparkle Star -->
+    <polygon points="27,34 27.7,35.6 29.3,36.2 27.7,36.8 27,38.5 26.3,36.8 24.7,36.2 26.3,35.6" fill="#FFFFFF"/>
+    <!-- Side Gold Glints -->
+    <circle cx="34" cy="36" r="1.3" fill="#FFFFFF"/>
+    <circle cx="30" cy="40" r="1.1" fill="#FEF9C3"/>
+    <circle cx="36" cy="44" r="1" fill="#FFFFFF"/>
+    <circle cx="29" cy="22" r="1.2" fill="#FEF08A"/>
+  </g>
+</svg>
+

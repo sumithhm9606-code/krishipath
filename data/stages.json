@@ -1,0 +1,66 @@
+[
+ {
+  "en": "Land preparation",
+  "kn": "ಭೂಮಿ ಸಿದ್ಧತೆ",
+  "start": -14,
+  "end": -7,
+  "de": "Plough 2–3 times, level the field and mix well-rotted farmyard manure. Take a soil test if you can.",
+  "dk": "2–3 ಬಾರಿ ಉಳುಮೆ ಮಾಡಿ, ಭೂಮಿ ಸಮತಟ್ಟು ಮಾಡಿ, ಕೊಳೆತ ಕೊಟ್ಟಿಗೆ ಗೊಬ್ಬರ ಸೇರಿಸಿ. ಸಾಧ್ಯವಾದರೆ ಮಣ್ಣು ಪರೀಕ್ಷೆ ಮಾಡಿಸಿ."
+ },
+ {
+  "en": "Seed / seedling selection",
+  "kn": "ಬೀಜ / ಸಸಿ ಆಯ್ಕೆ",
+  "start": -7,
+  "end": 0,
+  "de": "Choose a variety your KVK or agriculture university recommends. Buy certified seed or healthy seedlings.",
+  "dk": "ಕೃಷಿ ವಿಜ್ಞಾನ ಕೇಂದ್ರ ಅಥವಾ ವಿಶ್ವವಿದ್ಯಾಲಯ ಶಿಫಾರಸು ಮಾಡಿದ ತಳಿ ಆರಿಸಿ. ಪ್ರಮಾಣಿತ ಬೀಜ ಅಥವಾ ಆರೋಗ್ಯಕರ ಸಸಿ ಖರೀದಿಸಿ."
+ },
+ {
+  "en": "Sowing / planting",
+  "kn": "ಬಿತ್ತನೆ / ನಾಟಿ",
+  "start": 0,
+  "end": 0,
+  "de": "Sow or plant at the right depth and spacing, when soil has enough moisture.",
+  "dk": "ಮಣ್ಣಿನಲ್ಲಿ ಸಾಕಷ್ಟು ತೇವ ಇರುವಾಗ ಸರಿಯಾದ ಆಳ ಮತ್ತು ಅಂತರದಲ್ಲಿ ಬಿತ್ತಿ ಅಥವಾ ನಾಟಿ ಮಾಡಿ."
+ },
+ {
+  "en": "Irrigation",
+  "kn": "ನೀರಾವರಿ",
+  "start": 0,
+  "end": 1,
+  "de": "Water at critical stages: establishment, flowering and grain or fruit filling. Avoid waterlogging.",
+  "dk": "ಬೇರೂರುವ, ಹೂಬಿಡುವ, ಕಾಳು/ಹಣ್ಣು ತುಂಬುವ ಹಂತಗಳಲ್ಲಿ ನೀರು ಕೊಡಿ. ನೀರು ನಿಲ್ಲದಂತೆ ನೋಡಿಕೊಳ್ಳಿ."
+ },
+ {
+  "en": "Nutrient management",
+  "kn": "ಪೋಷಕಾಂಶ ನಿರ್ವಹಣೆ",
+  "start": 0,
+  "end": 0.6,
+  "de": "Give half the nitrogen with all phosphorus and potash at sowing. Split the rest at about 30% and 60% of the crop period.",
+  "dk": "ಬಿತ್ತನೆ ವೇಳೆ ಅರ್ಧ ಸಾರಜನಕ, ಪೂರ್ತಿ ರಂಜಕ, ಪೊಟ್ಯಾಶ್ ಕೊಡಿ. ಉಳಿದದ್ದನ್ನು ಬೆಳೆ ಅವಧಿಯ ಸುಮಾರು 30% ಮತ್ತು 60%ರಲ್ಲಿ ಕೊಡಿ."
+ },
+ {
+  "en": "Intercultural operations",
+  "kn": "ಕಳೆ / ಅಂತರ ಬೇಸಾಯ",
+  "start": 0.2,
+  "end": 0.7,
+  "de": "Weed 2–3 times, thin extra plants, earth up or stake where needed.",
+  "dk": "2–3 ಬಾರಿ ಕಳೆ ತೆಗೆಯಿರಿ, ಹೆಚ್ಚುವರಿ ಗಿಡ ವಿರಳಗೊಳಿಸಿ, ಅಗತ್ಯವಿದ್ದರೆ ಮಣ್ಣು ಏರಿಸಿ ಅಥವಾ ಊರುಗೋಲು ಕೊಡಿ."
+ },
+ {
+  "en": "Crop protection",
+  "kn": "ಬೆಳೆ ರಕ್ಷಣೆ",
+  "start": 0.15,
+  "end": 0.9,
+  "de": "Scout weekly. Use clean seed, traps and resistant varieties. Spray only on expert advice after checking the label.",
+  "dk": "ವಾರಕ್ಕೊಮ್ಮೆ ಬೆಳೆ ಪರಿಶೀಲಿಸಿ. ಶುದ್ಧ ಬೀಜ, ಬಲೆ, ನಿರೋಧಕ ತಳಿ ಬಳಸಿ. ತಜ್ಞರ ಸಲಹೆ ಮತ್ತು ಲೇಬಲ್ ನೋಡಿದ ನಂತರ ಮಾತ್ರ ಸಿಂಪಡಿಸಿ."
+ },
+ {
+  "en": "Harvest",
+  "kn": "ಕೊಯ್ಲು",
+  "start": 1,
+  "end": 1,
+  "de": "Harvest at maturity in dry weather. Dry, grade and store properly before selling.",
+  "dk": "ಪಕ್ವವಾದಾಗ ಒಣ ಹವೆಯಲ್ಲಿ ಕೊಯ್ಲು ಮಾಡಿ. ಮಾರುವ ಮೊದಲು ಒಣಗಿಸಿ, ವಿಂಗಡಿಸಿ, ಸರಿಯಾಗಿ ಸಂಗ್ರಹಿಸಿ."
+ }
+]
